@@ -1,0 +1,205 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+    padding: 18px;
+  }
+.header-container {
+    height: 180px;
+    width: 100%;
+    background-color: greenyellow;
+
+    display: flex;
+    align-items: stretch;
+    padding: 40px 450px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: green;
+    font-size: 20px; /*---text size of Welcome {user}---*/
+    font-weight: bold;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+  }
+
+
+/* ------------HEADER (Left - Navbar Menu)------------- */
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.nav-link {
+  transition: 0.7s ease;
+}
+.nav-link:hover {
+  color: #c8b11c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration-line: underline;
+}
+.nav-container a {
+  font-size: 20px;
+  text-decoration: none;
+  padding: 9px;
+  margin: 15px;
+  background-color: rgb(47, 45, 45);
+  color: rgb(245, 239, 188);
+  border-radius: 8px;
+}
+
+/*-------(Welcome {user})---------*/
+.img-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  border-radius: 30% 0 35% 0;
+  color: white;
+  background-color: rgb(102, 147, 51);
+}
+.img-container img {
+  height: 42px;
+  width: 42px;
+  border-radius: 40%;
+}
+.username {
+  margin-bottom: 5px;
+}
+/*--------(Add a new fruggie btn)---------*/
+.link-button {
+  text-align: center;
+  height: 10em;
+  width: 200px;
+  border: none;
+  border-radius: 0 30% 0 35%;
+  background-color: green;
+  display: flex;
+}
+.link-button span {
+  font-size: 21px;
+  font-weight: bolder;
+}
+.profile-container-loggedin {
+  display: flex;
+  align-items: center;
+  width: 47%;
+  border-radius: 20px;
+  justify-content: space-between;
+}
+.login-btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 9px;
+  margin: 15px;
+  background-color: rgb(47, 45, 45);
+  color: rgb(245, 239, 188);
+}
+.login-btn:hover {
+  color: #c8b11c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration-line: underline;
+}
+.logout-btn {
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.7s ease;
+  font-size: 20px;
+  text-decoration: none;
+  padding: 9px;
+  margin: 15px;
+  background-color: rgb(47, 45, 45);
+  color: rgb(245, 239, 188);
+}
+.logout-btn:hover {
+  color: #c8b11c;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  text-decoration-line: underline;
+}
+.profile-container-loggedout {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 25px;
+}
+
+/*--------(HEAD MODAL)---------*/
+.header-modal h3 {
+  max-width: fit-content;
+  cursor: pointer;
+  color: black;
+  padding-bottom: 10px;
+}
+.header-modal {
+  background-color: rgb(74, 130, 74);
+  border-radius: 0 0 8px 8px;
+  height: 50vh;
+  width: 25vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 8px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header-modal h2 {
+  margin: auto;
+  max-width: fit-content;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.header-modal form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 15vh;
+}
+.header-modal input {
+  width: 80%;
+  border: none;
+  border-radius: 8px;
+  padding: 3px 8px;
+}
+.dont, .already {
+  text-align: center;
+}
+.already {
+  padding-top: 15px;
+  padding-bottom: 18px;
+}
+.header-modal input {
+  margin: 3px;
+}
+.header-modal span {
+  cursor: pointer;
+  font-style: italic;
+  font-size: 17px;
+  background-color: greenyellow;
+  color: green;
+  padding: 8px;
+  border-radius: 8px;
+}
+.header-modal p {
+  margin: auto;
+  max-width: fit-content;
+}
+
+
+  
