@@ -1,6 +1,6 @@
 .contents-container {
   min-height: 100vh;
-  padding: 30px 140px;
+  padding: 50px 140px;
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -61,9 +61,15 @@
 /*--------------------------*/
 /*--------------------------*/
 /* ------------MEDIA QUERIES------------- */
+@media (max-width: 1350px) {
+  .contents-container {
+    background-color: purple;
+  }
+}
 @media (max-width: 1250px) {
   .contents-container {
     padding: 30px 110px;
+    background-color: red;
   }
   .content-img {
     height: 9em;
@@ -73,6 +79,7 @@
 @media (max-width: 1160px) {
   .contents-container {
     padding: 30px 100px;
+    background-color: pink;
   }
   .content-card {
     height: 510px
@@ -88,6 +95,7 @@
 @media (max-width: 1000px) {
   .contents-container {
     padding: 30px 70px;
+    background-color: blue;
   }
   .content-img {
     height: 8em;
@@ -97,9 +105,10 @@
 @media (max-width: 950px) {
   .contents-container {
     padding: 30px 50px;
+    background-color: green;
   }
   .content-desc {
-    padding: 22px;
+    padding: 25px;
   }
   .content-img {
     height: 7em;
@@ -110,6 +119,7 @@
   .contents-container {
     grid-template-columns: repeat(2, 1fr);
     padding: 55px;
+    background-color: orange;
   }
   .content-img {
     height: 9em;
@@ -119,12 +129,16 @@
 @media (max-width: 870px) {
   .contents-container {
     padding: 50px;
+    background-color: aqua;
   }
 }
 @media (max-width: 800px) {
   .contents-container {
     min-height: 100vh;
     padding: 50px;
+  }
+  .content-card {
+    height: 530px;
   }
   .content-img {
     height: 9em;
@@ -138,12 +152,13 @@
     flex-direction: column;
   }
   .content-card {
-    padding: 25px;
-    height: 530px;
+    padding: 20px;
+    height: 550px;
   }
   .content-img {
-    height: 11em;
-    width: 15em;
+    height: 12em;
+    width: 16em;
+
   }
 }
 @media (max-width: 530px) {
@@ -152,7 +167,7 @@
   }
   .content-img {
     height: 10em;
-    width: 13em;
+    width: 14em;
   }
 }
 @media (max-width: 470px) {
@@ -160,7 +175,7 @@
     padding: 50px 65px;
   }
   .content-desc {
-    padding: 20px;
+    padding: 15px;
   }
   .content-img {
     height: 9em;
@@ -169,26 +184,22 @@
 }
 @media (max-width: 410px) {
   .contents-container {
-    padding: 40px 50px;
+    padding: 40px 30px;
   }
   .content-desc {
     padding: 14px;
   }
-  .content-img {
-    height: 8em;
-    width: 12em;
-  }
 }
 @media (max-width: 350px) {
   .contents-container {
-    padding: 40px 25px;
+    padding: 40px 20px;
   }
   .content-desc {
     padding: 12px;
   }
   .content-img {
     height: 8em;
-    width: 13em;
+    width: 11em;
   }
 }
 

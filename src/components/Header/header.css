@@ -207,7 +207,7 @@ a {
 /* ------------MEDIA QUERIES------------- */
 @media (max-width: 1350px) {
   .header-container {
-    padding: 40px 200px 40px 200px;
+    padding: 40px 200px;
   }
 }
 
@@ -245,6 +245,10 @@ a {
   .header-container {
     padding: 40px 50px;
   }
+  .header-modal {
+    height: 52vh;
+    width: 28vw;
+  }
 }
 @media (max-width: 710px) {
   .header-container {
@@ -274,6 +278,20 @@ a {
 @media (max-width: 410px) {
   .header-container {
     padding: 32px;
+  }
+  .header-modal {
+    height: 52vh;
+    width: 32vw;
+  }
+  .header-modal h2 {
+    font-size: 25px;
+  }
+  .nav-link a {
+    font-size: 14px;
+    padding: 7px;
+  }
+  .nav-link:hover {
+    font-size: 12px;
   }
 }
 
