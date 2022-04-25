@@ -272,12 +272,12 @@ a {
 }
 @media (max-width: 530px) {
   .header-container {
-    padding: 45px;
+    padding: 35px;
   }
 }
 @media (max-width: 410px) {
   .header-container {
-    padding: 32px;
+    padding: 28px;
   }
   .header-modal {
     height: 52vh;
@@ -292,6 +292,11 @@ a {
   }
   .nav-link:hover {
     font-size: 12px;
+  }
+}
+@media (max-width: 330px) {
+  .header-container {
+    padding: 20px;
   }
 }
 
