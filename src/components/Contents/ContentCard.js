@@ -15,7 +15,7 @@ export default function ContentCard({content}){
                 <h2>{content.title}</h2><br />
                 <p>{content.description}</p>
                     <div className='content-category'>
-                        <p>{content.category}</p>
+                    {content.category}
                     </div>  
             </div>
 
