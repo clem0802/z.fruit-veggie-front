@@ -57,7 +57,7 @@ export default function Header({baseUrl}) {
     return (
         <div className='header-container'>
             <div>
-                <p><a href="/">Fruggie App</a></p>
+                <p className='fruggie-app'><a href="/">Fruggie App</a></p>
                 <nav className='nav-container'>
                         <a className="nav-link" href="/">Home</a>
                         <a className="nav-link" href="/contents">Contents</a>
@@ -82,7 +82,7 @@ export default function Header({baseUrl}) {
                 </div> 
 
                 : <div className='profile-container-loggedout'>
-                        <p>Login to add contents</p>
+                        <p className='login-to-add'>Login to add contents</p>
                         <button className='login-btn' onClick={()=>setModal(!modal)}>Login</button>
                   </div>
             }

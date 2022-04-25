@@ -13,10 +13,10 @@ export default function ContentCard({content}){
             <img className='content-img' src={content.imageUrl} alt="content" />
             <div className='content-info'>
                 <h2>{content.title}</h2><br />
-                <p>{content.description}</p>
-                    <div className='content-category'>
-                    {content.category}
-                    </div>  
+                <p className='content-desc'>{content.description}</p>
+                <div className='content-category'>
+                {content.category}
+                </div>  
             </div>
 
             <div>
