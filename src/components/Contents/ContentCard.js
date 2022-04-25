@@ -1,5 +1,7 @@
-import axios from 'axios';
-import React,{useEffect,useState} from 'react';
+// import axios from 'axios';
+
+import {useEffect,useState} from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 
 export default function ContentCard({content}){
@@ -20,7 +22,7 @@ export default function ContentCard({content}){
             <div>
 
                 <button className='detail-button'>
-                        <Link to="{/contentdetails/${baseUrl}/${content.id}}"><span><p>See details</p></span></Link>
+                        <Link to={`/contentdetails/${content.id}`}><span><p>See details</p></span></Link>
                 </button>
 
                 {
