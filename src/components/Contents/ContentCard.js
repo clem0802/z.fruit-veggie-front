@@ -14,13 +14,12 @@ export default function ContentCard({content}){
             <div className='content-info'>
                 <h2>{content.title}</h2><br />
                 <p>{content.description}</p>
-                <div className='content-category'>
-                    <p>{content.category}</p>
-                </div>  
+                    <div className='content-category'>
+                        <p>{content.category}</p>
+                    </div>  
             </div>
 
             <div>
-
                 <button className='detail-button'>
                         <Link to={`/contentdetails/${content.id}`}><span><p>See details</p></span></Link>
                 </button>

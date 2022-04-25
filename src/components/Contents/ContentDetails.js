@@ -1,6 +1,7 @@
 import React from 'react';
 import './contents.css';
 import {useParams} from "react-router-dom"; 
+import { Link } from 'react-router-dom';
 
 // import {useState,useEffect,useContext} from 'react';
 // import { UserContext } from '../../context/UserContext';
@@ -17,14 +18,13 @@ export default function ContentDetails({baseUrl}){
         <div className='content-details-container'>
           TESTING (2)
           <div>   
-                <img className="content-detail-image" src={currentContent[0].imageUrl} alt="fruggie content" />
-                <h1 style={{fontWeight: "bold"}}>{currentContent[0].title}</h1>
-                <p>{currentContent[0].description}</p><br/>
-                <p>{currentContent[0].category}</p><br/>
+                <img className="content-detail-image" src={currentContent[1].imageUrl} alt="fruggie content" />
+                <h1 style={{fontWeight: "bold"}}>{currentContent[1].title}</h1>
+                <p>{currentContent[1].description}</p><br/>
+                <p>{currentContent[1].category}</p><br/>
 
                 {/* key={content.id} content={content} */}
-
-                <a href={`/contents`}><button className='content-button back'>{currentContent[0]}Back to Contents Page</button></a>
+                <Link to="/contents" className='content-button back'><span><p>Back to Contents Page</p></span></Link>
           </div>
         </div>
     )
