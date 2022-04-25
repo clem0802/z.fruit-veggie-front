@@ -4,8 +4,8 @@ import React,{useEffect,useState} from 'react';
 import { UserContext } from './context/UserContext';
 import {
   BrowserRouter,
-  Route,
   Routes,
+  Route,
 } from 'react-router-dom';
 import axios from 'axios';
 import Home from './components/Home/Home';
@@ -42,7 +42,7 @@ function App() {
                   <Routes>
                       <Route path="/" element={<Home />} />
                       <Route path="/contents" element={<Contents contents={contents} />} />
-                      <Route path="/contentdetails/:{baseUrl}.title" element={<ContentDetails contents={contents} />} />
+                      <Route path={`/contentdetails/:${baseUrl}.title`} element={<ContentDetails contents={contents} />} />
                       <Route path="/add-content" element={<Form baseUrl={baseUrl} />} />
                   </Routes>
               <Footer />
