@@ -1,18 +1,18 @@
 .add-form-container {
     min-height: 100vh;
-  }
-  .add-content-form {
+}
+.add-content-form {
     background-color: green;
     width: 38%;
-    margin: 10% auto;
+    margin: 4% auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 24px;
     border-radius: 8px;
     color: white;
-  }
-  .input-container {
+}
+.input-container {
     background-color: rgba(130, 237, 146, 0.736);
     display: flex;
     flex-direction: column;
@@ -21,22 +21,22 @@
     margin-top: 16px;
     width: 85%;
     border-radius: 12px;
-  }
-  .input-container input,
-  .input-container label,
-  .input-container textarea {
+}
+.input-container input,
+.input-container label,
+.input-container textarea {
     width: 70%;
     padding: 13px;
     border: none;
     border-radius: 8px;
     color: black;
-  }
-  .input-container textarea {
+}
+.input-container textarea {
     resize: horizontal;
-  }
+}
 
   /*---------------(Submit btn)----------------*/
-  .add-content-form button {
+.add-content-form button {
     border: none;
     border-radius: 8px;
     cursor: pointer;
@@ -47,11 +47,141 @@
     margin: 25px 15px 15px 15px;
     background-color: rgb(47, 45, 45);
     color: rgb(245, 239, 188);
-  }
-  .add-content-form button:hover {
+}
+.add-content-form button:hover {
     color: #c8b11c;
     cursor: pointer;
     font-weight: bold;
     font-size: 18px;
     text-decoration-line: underline;
+}
+
+
+  /*--------------------------*/
+/*--------------------------*/
+/* ------------MEDIA QUERIES------------- */
+@media (max-width: 1350px) {
+  .add-form-container {
+    background-color: purple;
   }
+  .add-content-form {
+    margin: 3% auto;
+    width: 45%;
+  }
+/* }
+@media (max-width: 1250px) {
+  .add-form-container {
+    background-color: red;
+  }
+}
+@media (max-width: 1160px) {
+  .add-form-container {
+    background-color: pink;
+  } */
+}
+@media (max-width: 1000px) {
+  .add-form-container {
+    background-color: blue;
+  }
+  .add-content-form {
+    width: 50%;
+  }
+}
+/* @media (max-width: 950px) {
+  .add-form-container {
+    padding-top: 30px;
+    background-color: gold;
+  }
+  .add-content-form {
+  width: 54%;
+  }
+}  */
+@media (max-width: 900px) {
+  .add-form-container {
+    background-color: orange;
+  }
+} 
+@media (max-width: 870px) {
+  .add-form-container {
+    background-color: aqua;
+  }
+  .add-content-form {
+    width: 58%;
+  }
+}
+@media (max-width: 800px) {
+  .add-form-container {
+    background-color: black;
+  }
+  .add-content-form {
+    width: 65%;
+  }
+}
+@media (max-width: 710px) {
+  .add-form-container {
+    background-color: beige;
+  }
+  .add-content-form {
+    width: 68%;
+  }
+}
+@media (max-width: 620px) {
+  .add-form-container {
+  background-color: fuchsia;
+  }
+  .add-content-form {
+    width: 72%;
+  }
+}
+@media (max-width: 540px) {
+  .add-form-container {
+    background-color: gray;
+  }
+  .add-content-form {
+    width: 76%;
+  }
+}
+@media (max-width: 500px) {
+  .add-form-container {
+    background-color: blanchedalmond;
+  }
+  .add-content-form {
+    width: 82%;
+    padding: 24px 14px;
+  }
+}
+@media (max-width: 450px) {
+  .add-form-container {
+    background-color: dodgerblue;
+  }
+  .add-content-form {
+    width: 85%;
+    padding: 24px 10px;
+  }
+}
+@media (max-width: 400px) {
+  .add-form-container {
+    background-color: red;
+  }
+  .add-content-form {
+    width: 89%;
+  }
+  .input-container input,
+  .input-container label,
+  .input-container textarea {
+    width: 80%;
+  }
+}
+@media (max-width: 330px) {
+  .add-form-container {
+    background-color: indigo;
+  }
+  .add-content-form {
+    width: 92%;
+  }
+  .input-container input,
+  .input-container label,
+  .input-container textarea {
+    width: 90%;
+  }
+}

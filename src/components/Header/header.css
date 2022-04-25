@@ -2,7 +2,7 @@ a {
     cursor: pointer;
     text-decoration: none;
     padding: 18px;
-  }
+}
 .header-container {
     height: 180px;
     width: 100%;
@@ -20,7 +20,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
-  }
+}
 
 
 /* ------------HEADER (Left - Navbar Menu)------------- */

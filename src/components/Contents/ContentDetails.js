@@ -1,15 +1,28 @@
-import React from 'react';
+// import React from 'react';
 import './contents.css';
 import {useParams} from "react-router-dom"; 
 import { Link } from 'react-router-dom';
 
-// import {useState,useEffect,useContext} from 'react';
+import axios from 'axios';
+import {useState,useEffect,useContext} from 'react';
 // import { UserContext } from '../../context/UserContext';
-// import axios from 'axios';
+
 
 
 export default function ContentDetails({baseUrl}){
     
+  const [contents,setContents]=useState([]);
+
+  useEffect(()=>{
+    axios.get(`${baseUrl}/contentdetails`)
+    .then(res=>{
+      setContents(res.data)
+    })
+    .catch(err=>console.log(err))
+  }, [])
+
+
+
 
     const {title} = useParams();
     const currentContent = {baseUrl}.filter(item=>item.title===title); 

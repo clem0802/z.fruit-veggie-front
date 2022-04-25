@@ -13,7 +13,8 @@ export default function Contents({contents}) { // {contents} is an array
 
             {
                 contents.map((content)=>{
-                    return <ContentCard key={content.id} content={content} />
+                    // return <ContentCard key={content.id} content={content} />
+                    return <ContentCard content={content} />
                 })
             }
         </div>
