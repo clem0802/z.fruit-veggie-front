@@ -1,6 +1,6 @@
 .home-container {
     height: 100vh;
-    /* background-image: url(https://i.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo); */
+    background-image: url(https://i.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo);
     background-size: cover;
     display: flex;
     flex-direction: row;

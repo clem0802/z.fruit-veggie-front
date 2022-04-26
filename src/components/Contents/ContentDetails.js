@@ -12,29 +12,29 @@ import {useState,useEffect,useContext} from 'react';
 export default function ContentDetails({baseUrl}){
     
   const [contents,setContents]=useState([]);
+  const {title} = useParams();
 
   useEffect(()=>{
-    axios.get(`${baseUrl}/contentdetails`)
+    axios.get(`${baseUrl}/contentdetails/${title}`)
     .then(res=>{
       setContents(res.data)
+      console.log(res.data)
     })
     .catch(err=>console.log(err))
   }, [])
 
 
 
-
-    const {title} = useParams();
-    const currentContent = {baseUrl}.filter(item=>item.title===title); 
+    
 
     return (
         <div className='content-details-container'>
           TESTING (2)
           <div>   
-                <img className="content-detail-image" src={currentContent[1].imageUrl} alt="fruggie content" />
-                <h1 style={{fontWeight: "bold"}}>{currentContent[1].title}</h1>
-                <p>{currentContent[1].description}</p><br/>
-                <p>{currentContent[1].category}</p><br/>
+                <img className="content-detail-image" src={contents.imageUrl} alt="fruggie content" />
+                <h1 style={{fontWeight: "bold"}}>{contents.title}</h1>
+                <p>{contents.description}</p><br/>
+                <p>{contents.category}</p><br/>
 
                 {/* key={content.id} content={content} */}
                 <Link to="/contents" className='content-button back'><span><p>Back to Contents Page</p></span></Link>
