@@ -146,7 +146,8 @@ a {
   padding-bottom: 10px;
 }
 .header-modal {
-  background-color: rgb(74, 130, 74);
+  /* background-color: rgb(74, 130, 74); */
+  background: rgba(171, 136, 19, 0.511);
   border-radius: 0 0 8px 8px;
   height: 50vh;
   width: 25vw;

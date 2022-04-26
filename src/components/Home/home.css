@@ -1,6 +1,6 @@
 .home-container {
     height: 100vh;
-    background-image: url(https://i.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo);
+    /* background-image: url(https://i.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo); */
     background-size: cover;
     display: flex;
     flex-direction: row;
@@ -19,7 +19,7 @@
     align-items: center;
     text-align: center;
     padding: 10px 45px 20px 45px;
-    margin-top: -100px;
+    margin-top: 20px;
     width: 610px;
     border-radius: 8px;
     -webkit-box-shadow: 2px 0px 8px 3px rgba(77, 76, 76, 0.6);
@@ -39,6 +39,9 @@
 @media (max-width: 1350px) {
     .home-container {
       background-color: purple;
+    }
+    .fruggie-card {
+      margin-top: 80px;
     }
   }
   @media (max-width: 1250px) {
@@ -87,13 +90,16 @@
       padding-right: 120px;
       background-color: beige;
     }
+    .fruggie-card {
+      margin-top: 110px;
+    }
   }
   @media (max-width: 620px) {
     .home-container {
     background-color: fuchsia;
     }
     .fruggie-card {
-      margin-top: -60px;
+      margin-top: 150px;
     }
   }
   @media (max-width: 540px) {
@@ -103,7 +109,7 @@
       background-color: gray;
     }
     .fruggie-card {
-      margin-top: -40px;
+      margin-top: 130px;
     }
   }
   @media (max-width: 500px) {
@@ -111,6 +117,9 @@
       padding-left: 80px; 
       padding-right: 80px;
       background-color: blanchedalmond;
+    }
+    .fruggie-card {
+      margin-top: 135px;
     }
   }
   @media (max-width: 460px) {
@@ -126,9 +135,6 @@
       padding-right: 40px;
       background-color: red;
     }
-    .fruggie-card {
-        margin-top: -20px;
-    }
   }
   @media (max-width: 330px) {
     .home-container {
@@ -137,7 +143,11 @@
       background-color: indigo;
     }
     .fruggie-card {
-        margin-top: 0px;
+      margin-top: 140px;
     }
+    .fruggie-card p {
+      font-size: 14px;
+  }
+    
   }
   
