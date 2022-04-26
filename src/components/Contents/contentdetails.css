@@ -4,7 +4,7 @@
     padding: 190px 30px 40px 30px;
 }
 .content-details-inner-container {
-    /* background-color: pink; */
+    background-color: pink;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
