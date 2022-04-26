@@ -44,7 +44,7 @@
 /*------------------------------------------*/
 .content-img {
   height: 10em;
-  width: 17em;
+  width: 15em;
   margin-top: 10px;
   border-radius: 12px;
 }
@@ -52,39 +52,41 @@
   padding: 8px;
   text-align: center;
 }
+.content-title {
+  margin-top: -45px;
+  margin-bottom: 30px;
+}
 .content-category {
   background-color: greenyellow;
-  padding: 10px;
+  padding: 15px;
   font-weight: bold;
   border-radius: 8px;
-  margin: 25px 85px 0px 85px;
-  border-radius: 0 70% 0 70%;
+  margin: 25px 85px -30px 85px;
+  border-radius: 0 55% 0 55%;
   text-align: center;
 }
-.content-card button {
+.detail-button {
   background-color: rgb(247, 170, 27);
   display: flex;
   border: none;
   border-radius: 12px;
-  margin-top: 10px;
+  margin-top: 5px;
   cursor: pointer;
   color: white;
 }
 .content-card span {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: bolder;
 }
-.content-details-container {
-  background-color: rebeccapurple;
-}
+
 
 
 /* ------------MEDIA QUERIES------------- */
 /* ------------MEDIA QUERIES------------- */
 @media (max-width: 1350px) {
   .contents-container {
-    /* background-color: purple; */
     width: 103%;
+    /* background-color: purple; */
   }
   .content-img {
     height: 9em;
@@ -103,6 +105,9 @@
   }
 }
 @media (max-width: 1240px) {
+  /* .contents-container {
+    background-color: salmon;
+  } */
   .content-img {
     height: 9em;
     width: 13em;
@@ -126,7 +131,8 @@
 }
 @media (max-width: 1000px) {
   .contents-container {
-    padding: 30px auto;
+    padding: 240px 130px 50px 130px;
+    grid-template-columns: repeat(2, 1fr);
     /* background-color: blue; */
   }
   .content-desc {
@@ -139,9 +145,7 @@
 }
 @media (max-width: 950px) {
   .contents-container {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 30px auto;
-    width: 100%;
+    width: 98%;
     /* background-color: green; */
   }
   .content-card {
@@ -158,7 +162,7 @@
 }
 @media (max-width: 900px) {
   .contents-container {
-    padding: 240px 130px 50px 130px;
+    padding: 220px 160px 50px 130px;
     /* background-color: orange; */
   }
   .content-card {
@@ -172,14 +176,15 @@
 }
 @media (max-width: 870px) {
   .contents-container {
-    padding: 240px 130px 50px 130px;
+    padding: 220px 165px 50px 130px;
     /* background-color: aqua; */
   }
 }
 @media (max-width: 800px) {
   .contents-container {
     min-height: 100vh;
-    padding: 240px 130px 50px 130px;
+    padding: 210px 165px 50px 130px;
+    /* background-color: teal; */
   }
   .content-card {
     height: 530px;
@@ -189,11 +194,12 @@
     width: 14em;
   }
 }
-@media (max-width: 710px) {
+@media (max-width: 730px) {
   .contents-container {
-    padding: 230px auto 50px auto;
+    padding: 210px 165px 50px 130px;
     display: flex;
     flex-direction: column;
+    /* background-color: darkblue; */
   }
   .content-card {
     padding: 20px;
@@ -206,7 +212,8 @@
 }
 @media (max-width: 530px) {
   .contents-container {
-    padding: 200px auto 50px auto;
+    padding: 210px 160px 50px 130px;
+    /* background-color: gold; */
   }
   .content-img {
     height: 10em;
@@ -215,7 +222,8 @@
 }
 @media (max-width: 470px) {
   .contents-container {
-    padding: 180px auto 50px auto;
+    padding: 210px 155px 50px 130px;
+    /* background-color: firebrick; */
   }
   .content-desc {
     padding: 15px;
@@ -227,7 +235,8 @@
 }
 @media (max-width: 410px) {
   .contents-container {
-    padding: 150px auto 50px auto;
+    padding: 210px 135px 50px 130px;
+    /* background-color: slateblue; */
   }
   .content-card {
     width: 90%;
@@ -236,12 +245,14 @@
     padding: 14px;
   }
 }
-@media (max-width: 350px) {
+@media (max-width: 340px) {
   .contents-container {
-    padding: 100px auto 50px auto;
+    padding: 210px 100px 50px 130px;
+    width: 108%;
+    /* background-color: rgb(99, 96, 96); */
   }
   .content-card {
-    width: 85%;
+    width: 80%;
   }
   .content-desc {
     padding: 12px;

@@ -1,5 +1,5 @@
 // import React from 'react';
-import './contents.css';
+import './contentdetails.css';
 import {useParams} from "react-router-dom"; 
 import { Link } from 'react-router-dom';
 
@@ -28,17 +28,20 @@ export default function ContentDetails({baseUrl}){
     
 
     return (
-        <div className='content-details-container'>
-          TESTING (2)
-          <div>   
-                <img className="content-detail-image" src={contents.imageUrl} alt="fruggie content" />
-                <h1 style={{fontWeight: "bold"}}>{contents.title}</h1>
-                <p>{contents.description}</p><br/>
-                <p>{contents.category}</p><br/>
+        <div className='content-details-outer-container'>
 
-                {/* key={content.id} content={content} */}
-                <Link to="/contents" className='content-button back'><span><p>Back to Contents Page</p></span></Link>
+          <div className='content-details-inner-container'>
+            <img className="detail-image" src={contents.imageUrl} alt="fruggie content" />
+            <div className='title-category-container'>
+              <p className="detail-category">{contents.category}</p>
+              <h1 className="detail-title" style={{fontWeight: "bold"}}>{contents.title}</h1>
+            </div>
+            <div className='descript-back-container'>
+              <p className="detail-descript">{contents.description}</p>
+              <Link to="/contents" className='detail-back-btn'><span><p>Back to Contents Page</p></span></Link>
+            </div>
           </div>
+
         </div>
     )
 }

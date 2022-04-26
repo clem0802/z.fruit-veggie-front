@@ -88,20 +88,23 @@
     .home-container {
       padding-left: 120px; 
       padding-right: 120px;
-      background-color: beige;
+      background-color: teal;
     }
     .fruggie-card {
-      margin-top: 110px;
+      margin-top: 120px;
     }
   }
-  @media (max-width: 620px) {
+  @media (max-width: 630px) {
     .home-container {
     background-color: fuchsia;
     }
     .fruggie-card {
       margin-top: 150px;
     }
-  }
+    .fruggie-card p {
+      font-size: 16px;
+    }
+}
   @media (max-width: 540px) {
     .home-container {
       padding-left: 100px; 
@@ -110,6 +113,9 @@
     }
     .fruggie-card {
       margin-top: 130px;
+    }
+    .fruggie-card p {
+      font-size: 14px;
     }
   }
   @media (max-width: 500px) {
@@ -146,7 +152,7 @@
       margin-top: 140px;
     }
     .fruggie-card p {
-      font-size: 14px;
+      font-size: 12px;
   }
     
   }

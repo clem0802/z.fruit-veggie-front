@@ -8,8 +8,7 @@
     align-items: center;
   } */
   .footer-container {
-    background-color: rgb(108, 166, 21);
-    height: 100px;
+    background-color: rgba(98, 166, 3, 0.594);
     font-size: 25px;
     display: flex;
     justify-content: center;

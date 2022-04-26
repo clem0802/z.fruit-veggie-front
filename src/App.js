@@ -14,7 +14,7 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Form from './components/Form/Form';
 import ContentDetails from './components/Contents/ContentDetails';
-import data from './components/Contents/ContentData';
+// import data from './components/Contents/ContentData';
 
 
 

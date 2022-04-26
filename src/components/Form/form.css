@@ -1,10 +1,11 @@
 .add-form-container {
     min-height: 100vh;
+    padding: 200px 130px 50px 130px;
 }
 .add-content-form {
     background-color: green;
     width: 38%;
-    margin: 4% auto;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -6,14 +6,13 @@ a {
 .header-container {
     height: 160px;
     width: 100%;
-    background-color: rgba(53, 133, 13, 0.407);
+    background-color: rgba(30, 76, 14, 0.532);
     display: flex;
     align-items: stretch;
     padding: 40px 250px 40px 200px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    color: green;
     font-size: 20px; /*---text size of Welcome {user}---*/
     font-weight: bold;
     background-size: contain;
@@ -25,6 +24,18 @@ a {
 
 
 /* ------------HEADER (Left - Navbar Menu)------------- */
+.fruggie-app {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.402);
+  padding-bottom: 6px;
+  border-radius: 8px;
+}
+.fruggie-app:hover {
+ cursor: pointer;
+ transition: 0.7s ease;
+ font-size: 16px;
+ color: green;
+}
 .nav-container {
   width: 100%;
   display: flex;
@@ -46,17 +57,19 @@ a {
   text-decoration: none;
   padding: 9px;
   margin: 15px;
-  background-color: rgb(47, 45, 45);
-  color: rgb(245, 239, 188);
+  /* background-color: rgb(47, 45, 45); */
+  /* color: rgb(245, 239, 188); */
+  background-color: red;
+  color: white;
   border-radius: 8px;
 }
 
-/*-------(Welcome {user})---------*/
+/*-------(WELCOME {user})---------*/
 .img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px;
+  padding: 16px;
   width: 100%;
   border-radius: 30% 0 35% 0;
   color: white;
@@ -70,7 +83,7 @@ a {
 .username {
   margin-bottom: 5px;
 }
-/*--------(Add a new fruggie btn)---------*/
+/*--------(ADD a new fruggie btn)---------*/
 .link-button {
   text-align: center;
   height: 10em;
@@ -81,8 +94,9 @@ a {
   display: flex;
 }
 .link-button span {
-  font-size: 21px;
+  font-size: 20px;
   font-weight: bolder;
+  color: rgb(255, 250, 217);
 }
 .profile-container-loggedin {
   display: flex;
@@ -91,16 +105,28 @@ a {
   border-radius: 20px;
   justify-content: space-between;
 }
+.login-to-add {
+  margin-top: 10px;
+  font-size: 29px;
+  /* color: rgb(47, 45, 45); */
+
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.402);
+  padding: 5px 18px;
+  border-radius: 8px;
+}
 .login-btn {
   border: none;
   border-radius: 8px;
   cursor: pointer;
   transition: 0.7s ease;
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   padding: 9px;
   margin: 15px;
-  background-color: rgb(47, 45, 45);
+  /* background-color: rgb(47, 45, 45); */
+  background-color: red;
   color: rgb(245, 239, 188);
 }
 .login-btn:hover {
@@ -116,10 +142,12 @@ a {
   cursor: pointer;
   transition: 0.7s ease;
   font-size: 20px;
+  font-weight: bold;
   text-decoration: none;
   padding: 9px;
   margin: 15px;
-  background-color: rgb(47, 45, 45);
+  /* background-color: rgb(47, 45, 45); */
+  background-color: red;
   color: rgb(245, 239, 188);
 }
 .logout-btn:hover {
@@ -149,8 +177,10 @@ a {
   /* background-color: rgb(74, 130, 74); */
   background: rgba(171, 136, 19, 0.511);
   border-radius: 0 0 8px 8px;
-  height: 50vh;
-  width: 25vw;
+  height: 54vh;
+  width: 22vw;
+  margin-right: 46px;
+
   position: absolute;
   top: 0;
   right: 0;
@@ -159,6 +189,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   position: fixed;
 }
 .header-modal h2 {
@@ -166,6 +197,9 @@ a {
   max-width: fit-content;
   padding-bottom: 15px;
   margin-bottom: 15px;
+}
+.header-modal h3 {
+  color: rgb(159, 2, 2);
 }
 .header-modal form {
   display: flex;
@@ -212,6 +246,11 @@ a {
   .header-container {
     padding: 40px 200px;
   }
+  .header-modal {
+    height: 54vh;
+    width: 30vw;
+    margin-right: 26px;
+  }
 }
 
 @media (max-width: 1250px) {
@@ -238,13 +277,15 @@ a {
   .header-container {
     padding: 40px 70px;
   }
-  .header-modal {
-    width: 28vw;
-  }
 }
 @media (max-width: 870px) {
   .header-container {
     padding: 40px 60px;
+  }
+  .header-modal {
+    height: 54vh;
+    width: 32vw;
+    margin-right: 26px;
   }
 }
 @media (max-width: 800px) {
@@ -252,15 +293,22 @@ a {
     padding: 40px 50px;
   }
   .header-modal {
+    height: 52vh;
     width: 28vw;
+    margin-right: 28px;
+  }
+  .login-to-add {
+    display: none;
   }
 }
-@media (max-width: 710px) {
+@media (max-width: 720px) {
   .header-container {
     padding: 50px;
   }
   .header-modal {
+    height: 54vh;
     width: 32vw;
+    margin-right: 22px;
   }
 }
 @media (max-width: 620px) {
@@ -274,45 +322,45 @@ a {
   .login-to-add {
     display: none;
   }
-  .header-container {
-    padding: 30px;
-  }
   .header-modal {
     width: 34vw;
+    margin-right: 20px;
   }
 }
 @media (max-width: 530px) {
   .header-container {
-    padding: 35px;
+    padding: 30px;
   }
   .header-modal {
     width: 37vw;
+    margin-right: 18px;
+  }
+  .nav-link {
+    font-size: 18px;
   }
 }
 @media (max-width: 410px) {
   .header-container {
-    padding: 28px;
+    padding: 26px;
   }
   .header-modal {
     width: 39vw;
+    margin-right: 16px;
   }
   .header-modal h2 {
     font-size: 25px;
   }
-  .nav-link a {
-    font-size: 14px;
-    padding: 7px;
-  }
-  .nav-link:hover {
-    font-size: 12px;
-  }
 }
 @media (max-width: 330px) {
   .header-container {
-    padding: 20px;
+    padding: 18px;
   }
   .header-modal {
-    width: 41vw;
+    width: 48vw;
+    margin-right: 14px;
+  }
+  .login-btn, .logout-btn {
+    font-size: 18px;;
   }
 }
 
