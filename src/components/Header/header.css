@@ -4,7 +4,7 @@ a {
     padding: 18px;
 }
 .header-container {
-    height: 180px;
+    height: 160px;
     width: 100%;
     background-color: greenyellow;
     display: flex;
@@ -20,6 +20,7 @@ a {
     background-repeat: no-repeat;
     background-position: center;
     overflow: hidden;
+    position: fixed;
 }
 
 
@@ -157,6 +158,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: fixed;
 }
 .header-modal h2 {
   margin: auto;
@@ -235,6 +237,9 @@ a {
   .header-container {
     padding: 40px 70px;
   }
+  .header-modal {
+    width: 28vw;
+  }
 }
 @media (max-width: 870px) {
   .header-container {
@@ -246,13 +251,15 @@ a {
     padding: 40px 50px;
   }
   .header-modal {
-    height: 52vh;
     width: 28vw;
   }
 }
 @media (max-width: 710px) {
   .header-container {
     padding: 50px;
+  }
+  .header-modal {
+    width: 32vw;
   }
 }
 @media (max-width: 620px) {
@@ -269,10 +276,16 @@ a {
   .header-container {
     padding: 30px;
   }
+  .header-modal {
+    width: 34vw;
+  }
 }
 @media (max-width: 530px) {
   .header-container {
     padding: 35px;
+  }
+  .header-modal {
+    width: 37vw;
   }
 }
 @media (max-width: 410px) {
@@ -280,8 +293,7 @@ a {
     padding: 28px;
   }
   .header-modal {
-    height: 52vh;
-    width: 32vw;
+    width: 39vw;
   }
   .header-modal h2 {
     font-size: 25px;
@@ -297,6 +309,9 @@ a {
 @media (max-width: 330px) {
   .header-container {
     padding: 20px;
+  }
+  .header-modal {
+    width: 41vw;
   }
 }
 
