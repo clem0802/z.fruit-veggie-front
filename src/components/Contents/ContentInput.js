@@ -1,13 +1,14 @@
 import React from 'react';
-// ce fichier, à voir
+import './contentinput.css';
 
-export default function ContentInput({getAllBaskets,getOnlyFruits,getOnlyVeggies,handleFilter}) {
+
+export default function ContentInput({getAllFruggies,getOnlyFruits,getOnlyVeggies,handleFilter}) {
   return ( // inside Input.js, (1 input and 3 buttons)
-    <div className='input-container'>Take a look at some fruggie posts
-        <input placeholder="Enter a fruit or a vegetable" type="text" onChange={handleFilter} />
-        <button className='all-button' onClick={getAllBaskets}>All posts</button>
-        <button className='fruit-button' onClick={getOnlyFruits}>Fruit posts</button>
-        <button className='veggie-button' onClick={getOnlyVeggies}>Veggie posts</button>
+    <div className='content-input-container'>
+        {/* <input className="enter-fruggie" placeholder="Enter a fruit or a vegetable" type="text" onChange={handleFilter} /> */}
+        <button className='all-btn' onClick={getAllFruggies}>all fruggies</button>
+        <button className='fruit-btn' onClick={getOnlyFruits}>only fruit</button>
+        <button className='veggie-btn' onClick={getOnlyVeggies}>only veggie</button>
     </div>
   )
 }

@@ -1,0 +1,37 @@
+/* ------------CONTACT------------- */
+.contact-container {
+    height: 120vh;
+    background-image: url(https://i.picsum.photos/id/999/4000/2667.jpg?hmac=mTyBy8HWG_rqFam5j6PDtddQR2yBgA_EGhHdzx_SyPw);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .form-container {
+    width: 23%;
+    height: 360px;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: -150px;
+  }
+  .ipt {
+      border-radius: 8px;
+      padding: 15px;
+      margin: 6px;
+      width: 95%;
+      background-color: rgba(138, 143, 136, 0.411);
+      outline-width: 0;
+      border: none;
+  }
+  .no-outline:focus {
+    outline: none;
+  }
+  ::placeholder { 
+    color: rgb(244, 244, 68);
+    text-shadow: 1px 1px 2px white, 0 0 0.3em black;
+    font-size: 15px;
+    opacity: 1; 
+  }

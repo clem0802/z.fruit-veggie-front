@@ -1,11 +1,19 @@
-.contents-container {
-  min-height: 100vh;
-  padding: 230px 130px 50px 130px;
-  width: 105%;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+.all-contents-container {
+  /* background-color: blue; */
+  padding-top: 200px;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+.contents-container {
+  /* background-color: red; */
+  min-height: 100vh;
+  width: 100%;
+  padding:80px 210px;
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+  justify-content: center;
 }
   
 /* CONTENT CARD */
@@ -13,13 +21,13 @@
 /*--------------------------------------------*/
 .content-card {
   height: 460px;
-  width: 75%;
-  border-radius: 18px;
+  /* width: 80%; */
+  border-radius: 20px;
   align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  margin: 16px;
+  margin: 18px;
   overflow: hidden;
   background-color: beige;
 /*------------------------------------------*/
@@ -43,8 +51,8 @@
 
 /*------------------------------------------*/
 .content-img {
-  height: 10em;
-  width: 15em;
+  height: 11em;
+  width: 17em;
   margin-top: 10px;
   border-radius: 12px;
 }
@@ -53,41 +61,53 @@
   text-align: center;
 }
 .content-title {
-  margin-top: -45px;
-  margin-bottom: 30px;
+  margin-top: -10px;
+  margin-bottom: 10px;
 }
-.content-category {
-  background-color: greenyellow;
+.content-category, .fruit-button, .veggie-button {
   padding: 15px;
   font-weight: bold;
   border-radius: 8px;
-  margin: 25px 85px -30px 85px;
+  margin: 0px 85px -30px 85px;
   border-radius: 0 55% 0 55%;
   text-align: center;
 }
+.fruit-button {
+  background-color: rgb(252, 157, 157);
+  color: red;
+}
+.veggie-button {
+  background-color: rgb(157, 222, 100);
+  color: green;
+}
+/*--------"See details" button--------*/
 .detail-button {
-  background-color: rgb(247, 170, 27);
+  background-color: rgb(243, 227, 133);
   display: flex;
   border: none;
   border-radius: 12px;
   margin-top: 5px;
   cursor: pointer;
-  color: white;
 }
 .content-card span {
-  font-size: 14px;
+  font-size: 15px;
   font-weight: bolder;
+  transition: 0.7s ease;
 }
+.content-card span:hover {
+  color: dodgerblue;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+}
+
 
 
 
 /* ------------MEDIA QUERIES------------- */
 /* ------------MEDIA QUERIES------------- */
 @media (max-width: 1350px) {
-  .contents-container {
-    width: 103%;
-    /* background-color: purple; */
-  }
   .content-img {
     height: 9em;
     width: 13em;
@@ -95,9 +115,8 @@
 }
 @media (max-width: 1260px) {
   .contents-container {
-    padding: 30px auto;
-    width: 103%;
-    /* background-color: red; */
+    padding: 250px 120px;
+    background-color: red;
   }
   .content-img {
     height: 9em;
@@ -105,9 +124,9 @@
   }
 }
 @media (max-width: 1240px) {
-  /* .contents-container {
-    background-color: salmon;
-  } */
+  .contents-container {
+    background-color: orange;
+  }
   .content-img {
     height: 9em;
     width: 13em;
@@ -115,28 +134,23 @@
 }
 @media (max-width: 1160px) {
   .contents-container {
-    padding: 30px auto;
-    /* background-color: pink; */
+    padding: 250px 90px;
+    background-color: pink;
   }
   .content-card {
-    height: 510px
-  }
-  .content-desc {
-    padding: 20px;
+    height: 470px;
+    margin: 10px;
   }
   .content-img {
     height: 9em;
     width: 12em;
   }
 }
-@media (max-width: 1000px) {
+@media (max-width: 1030px) {
   .contents-container {
-    padding: 240px 130px 50px 130px;
+    padding: 240px 180px;
     grid-template-columns: repeat(2, 1fr);
-    /* background-color: blue; */
-  }
-  .content-desc {
-    padding: 23px;
+    background-color: blue;
   }
   .content-img {
     height: 8em;
@@ -145,15 +159,11 @@
 }
 @media (max-width: 950px) {
   .contents-container {
-    width: 98%;
-    /* background-color: green; */
+    background-color: green;
   }
   .content-card {
-    height: 480px;
+    height: 460px;
     width: 85%;
-  }
-  .content-desc {
-    padding: 25px;
   }
   .content-img {
     height: 7em;
@@ -162,12 +172,12 @@
 }
 @media (max-width: 900px) {
   .contents-container {
-    padding: 220px 160px 50px 130px;
-    /* background-color: orange; */
+    padding: 230px 180px;
+    background-color: orange;
   }
   .content-card {
     height: 500px;
-    width: 95%;
+    width: 90%;
   }
   .content-img {
     height: 9em;
@@ -176,15 +186,15 @@
 }
 @media (max-width: 870px) {
   .contents-container {
-    padding: 220px 165px 50px 130px;
-    /* background-color: aqua; */
+    padding: 230px 180px;
+    background-color: aqua;
   }
 }
 @media (max-width: 800px) {
   .contents-container {
     min-height: 100vh;
-    padding: 210px 165px 50px 130px;
-    /* background-color: teal; */
+    padding: 220px 160px;
+    background-color: teal;
   }
   .content-card {
     height: 530px;
@@ -196,70 +206,97 @@
 }
 @media (max-width: 730px) {
   .contents-container {
-    padding: 210px 165px 50px 130px;
+    padding: 230px 150px;
     display: flex;
     flex-direction: column;
-    /* background-color: darkblue; */
+    background-color: darkblue;
   }
   .content-card {
     padding: 20px;
-    height: 550px;
+    height: 530px;
   }
   .content-img {
     height: 12em;
     width: 16em;
   }
 }
-@media (max-width: 530px) {
+@media (max-width: 650px) {
   .contents-container {
-    padding: 210px 160px 50px 130px;
-    /* background-color: gold; */
+    background-color: greenyellow;
+  }
+  .content-card {
+    padding: 20px;
+    height: 480px;
   }
   .content-img {
-    height: 10em;
-    width: 14em;
-  }
-}
-@media (max-width: 470px) {
-  .contents-container {
-    padding: 210px 155px 50px 130px;
-    /* background-color: firebrick; */
-  }
-  .content-desc {
-    padding: 15px;
-  }
-  .content-img {
-    height: 9em;
+    height: 11em;
     width: 13em;
   }
 }
-@media (max-width: 410px) {
+@media (max-width: 570px) {
   .contents-container {
-    padding: 210px 135px 50px 130px;
-    /* background-color: slateblue; */
+    padding: 230px 140px;
+    background-color: gold;
   }
   .content-card {
-    width: 90%;
+    padding: 5px;
+    height: 440px;
   }
-  .content-desc {
-    padding: 14px;
+  .content-img {
+    height: 9em;
+    width: 10em;
+  }
+}
+@media (max-width: 490px) {
+  .contents-container {
+    padding: 230px 100px;
+    background-color: firebrick;
+  }
+  .content-img {
+    height: 9em;
+    width: 11em;
+  }
+}
+@media (max-width: 430px) {
+  .contents-container {
+    padding: 230px 90px;
+    background-color: slateblue;
+  }
+}
+@media (max-width: 400px) {
+  .contents-container {
+    padding: 210px 50px;
+    background-color: salmon;
   }
 }
 @media (max-width: 340px) {
   .contents-container {
-    padding: 210px 100px 50px 130px;
-    width: 108%;
-    /* background-color: rgb(99, 96, 96); */
+    padding: 210px 50px;
+    background-color: rgb(99, 96, 96);
   }
-  .content-card {
-    width: 80%;
+  .content-img {
+    height: 9em;
+    width: 10em;
   }
-  .content-desc {
-    padding: 12px;
+}
+@media (max-width: 300px) {
+  .contents-container {
+    padding: 210px 40px;
+    background-color: dodgerblue;
   }
   .content-img {
     height: 8em;
-    width: 11em;
+    width: 8em;
+  }
+}
+@media (max-width: 270px) {
+  .contents-container {
+    padding: 210px 20px;
+    background-color: rgb(235, 51, 248);
+  }
+  .content-img {
+    height: 7em;
+    width: em;
   }
 }
 
@@ -269,65 +306,4 @@
 
 
 
-
-/*--------------------------*/
-/*--------------------------*/
-/*-------------(BELOW are only testing elements)-------------*/
-.all-button,
-.fruit-button,
-.veggie-button {
-  border: none;
-  border-radius: 5px;
-  margin: 3px;
-  padding: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  color: rgb(235, 226, 226);
-}
-.all-button {
-  background-color: rgb(195, 184, 184);
-  color: rgb(58, 55, 55);
-}
-.fruit-button {
-  background-color: red;
-}
-.veggie-button {
-  background-color: green;
-}
-/* .title {
-  color: hotpink;
-  text-align: center;
-} */
-
-/*-------------(testing elements)-------------*/
-.input-container {
-  display: flex;
-  justify-content: center;
-  width: 50%;
-  padding: 20px;
-  margin: 0 auto;
-  /* background-color: orange;  */
-}
-.input-container input {
-  width: 50%;
-  padding: 0px 10px;
-}
- .input-container button {
-  margin-left: 10px;
-  cursor: pointer;
-}
-
-/*-----------container where red & green buttons-----------*/
-.baskets-container {
-  border: solid 2px grey;
-  border-radius: 8px;
-  padding: 10px;
-  background-color: pink;
-}
-.favorites-container {
-  border: solid 2px aqua;
-  border-radius: 8px;
-  margin: 10px 0px;
-  padding: 0 10px 10px 10px;
-}
 

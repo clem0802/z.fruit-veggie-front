@@ -1,27 +1,18 @@
-/* .footer-container {
-    height: 60px;
-    width: 100%;
-    background-color: rgb(218, 76, 76);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  } */
-  .footer-container {
-    background-color: rgba(98, 166, 3, 0.594);
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
-  .fontawesome-container {
-    width: 24%;
-    display: flex;
-    justify-content: space-evenly;
-    padding: 12px 12px 0 12px;
-  }
-  a {
-    color: rgb(47, 45, 45);
-    font-size: 30px;
-  }
-  
+.footer-container {
+  width: 100%;
+  background-color: rgba(98, 166, 3, 0.594);
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.fontawesome-container {
+  width: 24%;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 12px;
+}
+a {
+  color: rgb(47, 45, 45);
+  font-size: 32px;
+}

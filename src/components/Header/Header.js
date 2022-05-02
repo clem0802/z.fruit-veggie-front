@@ -63,6 +63,7 @@ export default function Header({baseUrl}) {
                         <a className="nav-link" href="/contents">Contents</a>
                         {/* <li><a className="nav-link" href="/portfolio">Portfolio</a></li>
                         <li><a className="nav-link" href="/contact">Contact</a></li> */}
+                        <a className="nav-link" href="/contact">Contact</a>
                 </nav>
             </div>
 
