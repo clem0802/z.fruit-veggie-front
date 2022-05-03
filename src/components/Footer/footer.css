@@ -1,10 +1,12 @@
 .footer-container {
   width: 100%;
-  background-color: rgba(98, 166, 3, 0.594);
+  background-color: rgba(76, 113, 24, 0.594);
   font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
+  /* border-top-left-radius: 40%;
+  border-top-right-radius: 40%; */
 }
 .fontawesome-container {
   width: 24%;

@@ -37,15 +37,16 @@ export default function ContentDetails({baseUrl}){
 
           <div className='content-details-inner-container'>
 
-              <img className="detail-image" src={contents.imageUrl} alt="fruggie content" />
-              <h3 className="detail-title" style={{fontWeight: "bold"}}>{contents.title}</h3>
-       
+                  <img className="detail-image" src={contents.imageUrl} alt="fruggie content" />
+                  <h3 className="detail-title" style={{fontWeight: "bold"}}>{contents.title}</h3>
+
+
               <div className='detail-descript-container'>
                   <p className="detail-descript">
                       <p className="detail-category">{contents.category}</p>
                       {contents.description}
                   </p>
-                  <Link to="/contents" className='detail-back-btn'><span><p>Back to Contents Page</p></span></Link>
+                  <Link to="/contents" className='detail-back-btn' style={{textDecoration: 'none'}}><span><p>{"<<"} Back</p></span></Link>
               </div>
               
 

@@ -2,6 +2,7 @@
     height: 100vh;
     background-image: url(https://i.picsum.photos/id/292/3852/2556.jpg?hmac=cPYEh0I48Xpek2DPFLxTBhlZnKVhQCJsbprR-Awl9lo);
     background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -9,7 +10,7 @@
 }
 
 .fruggie-card {
-    background-color: rgba(69, 68, 68, 0.439);
+    background-color: rgba(112, 109, 109, 0.439);
     color: rgb(3, 3, 3);
     text-shadow: 1px 1px 2px rgba(8, 34, 13, 0.959), 0 0 1em rgb(255, 255, 255);
     display: flex;
@@ -17,15 +18,15 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 10px 50px 20px 50px;
-    margin-top: 160px;
+    padding: 10px 70px 20px 70px;
+    margin-top: 180px;
     width: 610px;
     border-radius: 8px;
-    -webkit-box-shadow: 2px 0px 8px 3px rgba(77, 76, 76, 0.6);
+    -webkit-box-shadow: 2px 0px 8px 3px rgba(29, 123, 29, 0.6);
     box-shadow: 2px 0px 8px 3px rgba(89, 89, 89, 0.6);
 }
 .fruggie-card h3 {
-    font-size: 34px;
+    font-size: 33px;
 }
 .fruggie-card p {
     font-size: 13px;
@@ -40,22 +41,40 @@
       background-color: purple;
     }
     .fruggie-card {
-      margin-top: 80px;
+      margin-top: 210px;
+      padding: 10px 60px;
+    }
+    .fruggie-card p {
+      font-size: 12px;
     }
   }
   @media (max-width: 1250px) {
     .home-container {
       background-color: red;
     }
+    .fruggie-card {
+      margin-top: 215px;
+      padding: 10px 60px;
+    }
   }
   @media (max-width: 1160px) {
     .home-container {
       background-color: pink;
     }
+    .fruggie-card {
+      padding: 10px 60px;
+    }
+    .fruggie-card p {
+      font-size: 12px;
+    }
   }
   @media (max-width: 1000px) {
     .home-container {
       background-color: blue;
+    }
+    .fruggie-card {
+      margin-top: 210px;
+      padding: 10px 70px;
     }
   }
   @media (max-width: 950px) {
@@ -63,10 +82,18 @@
       padding-top: 30px;
       background-color: green;
     }
+    .fruggie-card {
+      margin-top: 200px;
+      padding: 10px 70px;
+    }
   }
   @media (max-width: 900px) {
     .home-container {
       background-color: orange;
+    }
+    .fruggie-card {
+      margin-top: 190px;
+      padding: 10px 60px;
     }
   }
   @media (max-width: 870px) {
@@ -75,12 +102,25 @@
       padding-right: 160px;
       background-color: aqua;
     }
+    .fruggie-card {
+      margin-top: 190px;
+      padding: 10px 50px;
+    }
   }
   @media (max-width: 800px) {
     .home-container {
-      padding-left: 140px; 
-      padding-right: 140px;
+      padding-left: 130px; 
+      padding-right: 130px;
       background-color: black;
+    }
+    .fruggie-card {
+      padding: 10px 45px;
+    }
+    .fruggie-card h3 {
+      font-size: 30px;
+    }
+    .fruggie-card p {
+      font-size: 11px;
     }
   }
   @media (max-width: 710px) {
@@ -90,7 +130,7 @@
       background-color: teal;
     }
     .fruggie-card {
-      margin-top: 120px;
+      margin-top: 170px;
     }
   }
   @media (max-width: 630px) {
@@ -98,10 +138,13 @@
     background-color: fuchsia;
     }
     .fruggie-card {
-      margin-top: 150px;
+      margin-top: 180px;
+    }
+    .fruggie-card h3 {
+      font-size: 25px;
     }
     .fruggie-card p {
-      font-size: 16px;
+      font-size: 9px;
     }
 }
   @media (max-width: 540px) {
@@ -110,11 +153,11 @@
       padding-right: 100px;
       background-color: gray;
     }
-    .fruggie-card {
-      margin-top: 130px;
+    .fruggie-card h3 {
+      font-size: 20px;
     }
     .fruggie-card p {
-      font-size: 14px;
+      font-size: 8px;
     }
   }
   @media (max-width: 500px) {
@@ -124,35 +167,47 @@
       background-color: blanchedalmond;
     }
     .fruggie-card {
-      margin-top: 135px;
+      margin-top: 155px;
     }
   }
   @media (max-width: 460px) {
     .home-container {
-      padding-left: 60px; 
-      padding-right: 60px;
+      padding-left: 45px; 
+      padding-right: 45px;
       background-color: dodgerblue;
     }
   }
   @media (max-width: 400px) {
     .home-container {
-      padding-left: 40px; 
-      padding-right: 40px;
+      padding-left: 30px; 
+      padding-right: 30px;
       background-color: red;
+    }
+    .fruggie-card {
+      padding: 10px 40px;
     }
   }
   @media (max-width: 330px) {
     .home-container {
-      padding-left: 40px; 
-      padding-right: 40px;
+      padding-left: 25px; 
+      padding-right: 25px;
       background-color: indigo;
     }
     .fruggie-card {
-      margin-top: 140px;
+      padding: 10px 20px;
+      margin-top: 150px;
+    }   
+  }
+  @media (max-width: 270px) {
+    .home-container {
+      padding-left: 20px; 
+      padding-right: 20px;
+      background-color: darkblue;
     }
-    .fruggie-card p {
-      font-size: 12px;
+    .fruggie-card {
+      padding: 10px 15px;
+      margin-top: 160px;
+    }   
   }
-    
-  }
+  
   

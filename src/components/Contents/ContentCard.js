@@ -9,15 +9,12 @@ export default function ContentCard({content}){
     const handleDelete=()=>{}
 
     return (
-        <div>
+        
             <div className='content-card'>
 
-                <button>
                     <img className='content-img' src={content.imageUrl} alt="content" />
                     <div className='content-info'>
                         <h2 className='content-title'>{content.title}</h2><br />
-                        {/* <p className='content-desc'>{content.description}</p> */}
-
                         <div className={content.category==="fruit" ? "fruit-button" : "veggie-button"}>
                         {content.category}
                         </div>  
@@ -31,10 +28,9 @@ export default function ContentCard({content}){
                             userId===content.user_id ? <button onClick={handleDelete}>delete</button> : null
                         }
                     </div>
-                </button>
-
+            
             </div>
-        </div>
+
 
     )
 }

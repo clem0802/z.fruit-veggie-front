@@ -1,17 +1,21 @@
 /*-------------(ContentInput.js)-------------*/
 .content-input-container {
+    /* background-color: yellow; */
     display: flex;
     justify-content: center;
     width: 50%;
-    padding: 20px;
-    margin: 30px;
+    padding: 10px;
+    margin: 20px;
 }
 .enter-fruggie {
     width: 50%;
     padding: 0px 10px;
-    background-color: rgba(35, 88, 24, 0.35);
+    background-color: rgba(49, 102, 38, 0.35);
     border: none;
     border-radius: 8px;
+}
+*:focus {
+    outline: none;
 }
 .input-container button {
     margin-left: 80px;

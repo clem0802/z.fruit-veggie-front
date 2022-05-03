@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import './contents.css';
 import ContentCard from './ContentCard';
-import ContentInput from './ContentInput';
+// import ContentInput from './z-ContentInput';
 
 
 
@@ -18,16 +18,13 @@ export default function Contents({contents}) { // {contents} is an array
 
 
   const getAllContents = () => {
-    // console.log("all"); => output on F12
     setAllContents(data); // => when setAllContents === data
   }
   const getOnlyFruits = () => {
-    // console.log("fruits"); => output on F12
     let filteredContents = data.filter(item=>item.category==="fruit")
     setAllContents(filteredContents); // => when setAllContents === filteredContents
   }
   const getOnlyVeggies = () => {
-    // console.log("veggies"); => output on F12
     let filteredContents = data.filter(item=>item.category==="vegetable")
     setAllContents(filteredContents); // => when setAllContents === filteredContents
   }
@@ -43,11 +40,11 @@ export default function Contents({contents}) { // {contents} is an array
 
     return (
      <div className='all-contents-container'>
-        <ContentInput getAllContents={getAllContents} getOnlyFruits={getOnlyFruits} getOnlyVeggies={getOnlyVeggies} handleFilter={handleFilter} />
+        {/* <ContentInput getAllContents={getAllContents} getOnlyFruits={getOnlyFruits} getOnlyVeggies={getOnlyVeggies} handleFilter={handleFilter} /> */}
         <div className='contents-container'>
             {
                 contents.map((content)=>{
-                  //  return <button onClick={()=>addToFavorites(item)} key={item.id} className={item.type==="f" ? "fruit-button" : "veggie-button"}>{item.basket}</button>
+                   //  return <button onClick={()=>addToFavorites(item)} key={item.id} className={item.type==="f" ? "fruit-button" : "veggie-button"}>{item.basket}</button>
                    return <ContentCard key={content.id} content={content} />
                    // return <ContentCard content={content} /> (elif)
                 })
