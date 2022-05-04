@@ -2,6 +2,8 @@
 .contact-container {
     height: 120vh;
     background-image: url(https://i.picsum.photos/id/999/4000/2667.jpg?hmac=mTyBy8HWG_rqFam5j6PDtddQR2yBgA_EGhHdzx_SyPw);
+    /* background-position: center;
+    background-repeat: no-repeat; */
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -15,7 +17,7 @@
     align-items: stretch;
     text-align: center;
     border-radius: 12px;
-    margin-top: -150px;
+    margin-top: -120px;
   }
   .ipt {
       border-radius: 8px;
