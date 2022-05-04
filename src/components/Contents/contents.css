@@ -88,6 +88,8 @@
 .content-title {
   margin-top: -10px;
   margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 .content-category, .fruit-button, .veggie-button {
   padding: 15px;
