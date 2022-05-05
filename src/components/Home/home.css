@@ -10,7 +10,7 @@
 }
 
 .fruggie-card {
-    background-color: rgba(112, 109, 109, 0.439);
+    background-color: rgba(129, 125, 125, 0.439);
     color: rgb(3, 3, 3);
     text-shadow: 1px 1px 2px rgba(8, 34, 13, 0.959), 0 0 1em rgb(255, 255, 255);
     display: flex;
@@ -37,176 +37,176 @@
 /*--------------------------*/
 /* ------------MEDIA QUERIES------------- */
 @media (max-width: 1350px) {
-    .home-container {
-      background-color: purple;
-    }
-    .fruggie-card {
-      margin-top: 210px;
-      padding: 10px 60px;
-    }
-    .fruggie-card p {
-      font-size: 12px;
-    }
+  .home-container {
+    background-color: purple;
   }
-  @media (max-width: 1250px) {
-    .home-container {
-      background-color: red;
-    }
-    .fruggie-card {
-      margin-top: 215px;
-      padding: 10px 60px;
-    }
+  .fruggie-card {
+    margin-top: 160px;
+    padding: 10px 60px;
   }
-  @media (max-width: 1160px) {
-    .home-container {
-      background-color: pink;
-    }
-    .fruggie-card {
-      padding: 10px 60px;
-    }
-    .fruggie-card p {
-      font-size: 12px;
-    }
+  .fruggie-card p {
+    font-size: 12px;
   }
-  @media (max-width: 1000px) {
-    .home-container {
-      background-color: blue;
-    }
-    .fruggie-card {
-      margin-top: 210px;
-      padding: 10px 70px;
-    }
-  }
-  @media (max-width: 950px) {
-    .home-container {
-      padding-top: 30px;
-      background-color: green;
-    }
-    .fruggie-card {
-      margin-top: 200px;
-      padding: 10px 70px;
-    }
-  }
-  @media (max-width: 900px) {
-    .home-container {
-      background-color: orange;
-    }
-    .fruggie-card {
-      margin-top: 190px;
-      padding: 10px 60px;
-    }
-  }
-  @media (max-width: 870px) {
-    .home-container {
-      padding-left: 160px; 
-      padding-right: 160px;
-      background-color: aqua;
-    }
-    .fruggie-card {
-      margin-top: 190px;
-      padding: 10px 50px;
-    }
-  }
-  @media (max-width: 800px) {
-    .home-container {
-      padding-left: 130px; 
-      padding-right: 130px;
-      background-color: black;
-    }
-    .fruggie-card {
-      padding: 10px 45px;
-    }
-    .fruggie-card h3 {
-      font-size: 30px;
-    }
-    .fruggie-card p {
-      font-size: 11px;
-    }
-  }
-  @media (max-width: 710px) {
-    .home-container {
-      padding-left: 120px; 
-      padding-right: 120px;
-      background-color: teal;
-    }
-    .fruggie-card {
-      margin-top: 170px;
-    }
-  }
-  @media (max-width: 630px) {
-    .home-container {
-    background-color: fuchsia;
-    }
-    .fruggie-card {
-      margin-top: 180px;
-    }
-    .fruggie-card h3 {
-      font-size: 25px;
-    }
-    .fruggie-card p {
-      font-size: 9px;
-    }
 }
-  @media (max-width: 540px) {
-    .home-container {
-      padding-left: 100px; 
-      padding-right: 100px;
-      background-color: gray;
-    }
-    .fruggie-card h3 {
-      font-size: 20px;
-    }
-    .fruggie-card p {
-      font-size: 8px;
-    }
+@media (max-width: 1250px) {
+  .home-container {
+    background-color: red;
   }
-  @media (max-width: 500px) {
-    .home-container {
-      padding-left: 80px; 
-      padding-right: 80px;
-      background-color: blanchedalmond;
-    }
-    .fruggie-card {
-      margin-top: 155px;
-    }
+  .fruggie-card {
+    margin-top: 170px;
+    padding: 10px 60px;
   }
-  @media (max-width: 460px) {
-    .home-container {
-      padding-left: 45px; 
-      padding-right: 45px;
-      background-color: dodgerblue;
-    }
+}
+@media (max-width: 1160px) {
+  .home-container {
+    background-color: pink;
   }
-  @media (max-width: 400px) {
-    .home-container {
-      padding-left: 30px; 
-      padding-right: 30px;
-      background-color: red;
-    }
-    .fruggie-card {
-      padding: 10px 40px;
-    }
+  .fruggie-card {
+    padding: 10px 60px;
   }
-  @media (max-width: 330px) {
-    .home-container {
-      padding-left: 25px; 
-      padding-right: 25px;
-      background-color: indigo;
-    }
-    .fruggie-card {
-      padding: 10px 20px;
-      margin-top: 150px;
-    }   
+  .fruggie-card p {
+    font-size: 12px;
   }
-  @media (max-width: 270px) {
-    .home-container {
-      padding-left: 20px; 
-      padding-right: 20px;
-      background-color: darkblue;
-    }
-    .fruggie-card {
-      padding: 10px 15px;
-      margin-top: 160px;
-    }   
+}
+@media (max-width: 1000px) {
+  .home-container {
+    background-color: blue;
   }
+  .fruggie-card {
+    margin-top: 170px;
+    padding: 10px 70px;
+  }
+}
+@media (max-width: 950px) {
+  .home-container {
+    padding-top: 30px;
+    background-color: green;
+  }
+  .fruggie-card {
+    margin-top: 165px;
+    padding: 10px 70px;
+  }
+}
+@media (max-width: 900px) {
+  .home-container {
+    background-color: orange;
+  }
+  .fruggie-card {
+    margin-top: 140px;
+    padding: 10px 60px;
+  }
+}
+@media (max-width: 870px) {
+  .home-container {
+    padding-left: 160px; 
+    padding-right: 160px;
+    background-color: aqua;
+  }
+  .fruggie-card {
+    margin-top: 130px;
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 800px) {
+  .home-container {
+    padding-left: 130px; 
+    padding-right: 130px;
+    background-color: black;
+  }
+  .fruggie-card {
+    padding: 10px 45px;
+  }
+  .fruggie-card h3 {
+    font-size: 30px;
+  }
+  .fruggie-card p {
+    font-size: 11px;
+  }
+}
+@media (max-width: 710px) {
+  .home-container {
+    padding-left: 120px; 
+    padding-right: 120px;
+    background-color: teal;
+  }
+  .fruggie-card {
+    margin-top: 125px;
+  }
+}
+@media (max-width: 640px) {
+  .home-container {
+  background-color: fuchsia;
+  }
+  .fruggie-card {
+    margin-top: 130px;
+  }
+  .fruggie-card h3 {
+    font-size: 25px;
+  }
+  .fruggie-card p {
+    font-size: 9px;
+  }
+}
+@media (max-width: 540px) {
+  .home-container {
+    padding-left: 100px; 
+    padding-right: 100px;
+    background-color: gray;
+  }
+  .fruggie-card h3 {
+    font-size: 20px;
+  }
+  .fruggie-card p {
+    font-size: 8px;
+  }
+}
+@media (max-width: 500px) {
+  .home-container {
+    padding-left: 80px; 
+    padding-right: 80px;
+    background-color: blanchedalmond;
+  }
+  .fruggie-card {
+    margin-top: 140px;
+  }
+}
+@media (max-width: 460px) {
+  .home-container {
+    padding-left: 45px; 
+    padding-right: 45px;
+    background-color: dodgerblue;
+  }
+}
+@media (max-width: 400px) {
+  .home-container {
+    padding-left: 30px; 
+    padding-right: 30px;
+    background-color: red;
+  }
+  .fruggie-card {
+    padding: 10px 40px;
+  }
+}
+@media (max-width: 330px) {
+  .home-container {
+    padding-left: 25px; 
+    padding-right: 25px;
+    background-color: indigo;
+  }
+  .fruggie-card {
+    padding: 10px 20px;
+    margin-top: 140px;
+  }   
+}
+@media (max-width: 270px) {
+  .home-container {
+    padding-left: 20px; 
+    padding-right: 20px;
+    background-color: darkblue;
+  }
+  .fruggie-card {
+    padding: 0px 5px;
+    margin-top: 130px;
+  }   
+}
   

@@ -8,17 +8,16 @@ input {
 }
 /*---------------------------*/
 .header-container {
-  /* height: 160px; */
-  height: 200px;
+  height: 160px;
   width: 100%;
-  background-color: rgba(30, 76, 14, 0.532);
+  background-color: rgb(106, 136, 65);
   display: flex;
   align-items: stretch;
   padding: 40px 180px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 20px; /*---text size of Welcome {user} + white "Login" title in modal ---*/
+  font-size: 15px; /*---text size of Welcome {user} + white "Login" title in modal ---*/
   font-weight: bold;
   background-size: contain;
   background-repeat: no-repeat;
@@ -32,32 +31,32 @@ input {
 /* ------------HEADER (Left - Navbar Menu)------------- */
 /*-----------(Tailwind Hamburger)------------*/
 .HAMBURGER-ICON {
-  margin-top: -200px;
+  margin-top: -150px;
 }
 .CROSS-ICON {
   left: 20px;
+  cursor: pointer;
 }
 .MENU-LINK-MOBILE-OPEN {
-  margin-top: -100px;
-  margin-left: -100px;
-  padding-left: 10px;
+  margin-top: 20px;
+  left: 0px;
 }
 .MENU-LINK-MOBILE-OPEN a {
   transition: 0.7s ease;
-  font-size: 25px;
+  font-size: 20px;
 }
 .MENU-LINK-MOBILE-OPEN a:hover {
   color: rgb(56, 54, 54);
-  font-size: 30px;
+  font-size: 24px;
   text-decoration: underline;
 }
 .DESKTOP-MENU a {
-  background-color: rgba(141, 131, 131, 0.491);
+  background-color: green;
   border-radius: 12px;;
-  font-size: 18px;
+  font-size: 17px;
   transition: 0.7s ease;
   text-align: center;
-  color: rgb(36, 84, 30); 
+  color: rgb(245, 239, 188);
 }
 .DESKTOP-MENU a:hover {
   color: #cab002;
@@ -65,56 +64,60 @@ input {
   text-decoration: underline;
 }
 
+
+/*-------(HEADER MODAL on the right)---------*/
 /*-------(WELCOME {user})---------*/
 .img-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
-  width: 100%;
-  border-radius: 30% 0 35% 0;
+  padding: 10px;
+  width: 50%;
+  border-radius: 12px;
   color: white;
-  background-color: rgb(102, 147, 51);
+  background-color: rgb(28, 100, 21);
 }
 .img-container img {
   height: 42px;
   width: 42px;
-  border-radius: 40%;
+  border-radius: 20%;
 }
 .username {
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
-/*--------(ADD a new fruggie btn)---------*/
+/*--------(ADD a new fruggie btn zone)---------*/
 .link-button {
   text-align: center;
-  height: 10em;
-  width: 200px;
-  border: none;
-  border-radius: 0 30% 0 35%;
+  height: 8em;
+  width: 140px;
+  border-radius: 12px;
   background-color: green;
   display: flex;
 }
+.link-button span:hover {
+  color: #c8b11c;
+  text-decoration-line: underline;
+}
 .link-button span {
-  font-size: 20px;
+  transition: 0.7s ease;
+  font-size: 15px;
   font-weight: bolder;
   color: rgb(255, 250, 217);
 }
 .profile-container-loggedin {
   display: flex;
   align-items: center;
-  width: 47%;
-  border-radius: 20px;
-  justify-content: space-between;
+  width: 50%;
 }
-.login-to-add {
+/* .login-to-add {
   margin-top: 10px;
   font-size: 28px;
   text-align: center;
   background-color: rgba(255, 255, 255, 0.402);
   padding: 5px 18px;
   border-radius: 8px;
-}
-/* Login btn - Header Right */
+} */
+/*--------(LOGIN btn - Header Right)---------*/
 .login-btn { 
   border: none;
   border-radius: 8px;
@@ -126,7 +129,6 @@ input {
   text-decoration: none;
   padding: 9px;
   margin: 15px;
-  /* background-color: rgb(47, 45, 45); */
   background-color: green;
   color: rgb(245, 239, 188);
 }
@@ -137,7 +139,8 @@ input {
   font-size: 22px;
   text-decoration-line: underline;
 }
-/* Logout btn - inside Header Submit Form */
+
+/*--------(LOGOUT btn - inside Header Submit Form)---------*/
 .logout-btn {
   border: none;
   border-radius: 8px;
@@ -148,8 +151,7 @@ input {
   text-decoration: none;
   padding: 9px;
   margin: 15px;
-  /* background-color: rgb(47, 45, 45); */
-  background-color: red;
+  background-color: rgb(159, 2, 2);
   color: rgb(245, 239, 188);
 }
 .logout-btn:hover {
@@ -169,20 +171,11 @@ input {
 }
 
 /*--------(HEADER MODAL)---------*/
-.header-modal h3 {
-  max-width: fit-content;
-  cursor: pointer;
-  color: black;
-  padding-bottom: 10px;
-}
 .header-modal {
-  /* background-color: rgb(74, 130, 74); */
-  background: rgba(171, 136, 19, 0.511);
+  background-color: rgb(74, 130, 74);
   border-radius: 0 0 8px 8px;
   height: 54vh;
   width: 22vw;
-  margin-right: 46px;
-
   position: absolute;
   top: 0;
   right: 0;
@@ -201,6 +194,9 @@ input {
   margin-bottom: 15px;
 }
 .header-modal h3 {
+  max-width: fit-content;
+  cursor: pointer;
+  padding-bottom: 10px;
   color: rgb(159, 2, 2);
 }
 .header-modal form {
@@ -250,151 +246,277 @@ input {
   }
   .header-modal {
     height: 54vh;
-    width: 30vw;
-    margin-right: 26px;
+    width: 22vw;
   }
 }
-
 @media (max-width: 1250px) {
   .header-container {
-    padding: 40px 140px;
+    padding: 40px 110px;
   }
 }
 @media (max-width: 1160px) {
   .header-container {
-    padding: 40px 120px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -185px;
+    padding: 40px 90px;
   }
 }
 @media (max-width: 1000px) {
   .header-container {
-    padding: 40px 100px;
-  }
-  .HAMBURGER-ICON {
-    margin-top: -180px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -180px;
+    padding: 40px 70px;
   }
 }
 @media (max-width: 950px) {
   .header-container {
-    padding: 40px 80px;
-  }
-  .HAMBURGER-ICON {
-    margin-top: -175px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -170px;
+    padding: 40px 50px;
   }
 }
 @media (max-width: 900px) {
   .header-container {
-    padding: 40px 60px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -160px;
+    padding: 40px 30px;
   }
 }
 @media (max-width: 870px) {
   .header-container {
-    padding: 40px 50px;
+    padding: 40px 20px;
   }
   .header-modal {
     height: 54vh;
     width: 32vw;
-    margin-right: 26px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -150px;
-  }
-}
-@media (max-width: 800px) {
-  .header-container {
-    padding: 40px 60px;
-  }
-  .header-modal {
-    height: 52vh;
-    width: 28vw;
-    margin-right: 28px;
-  }
-  .login-to-add {
-    display: none;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -130px;
-  }
-}
-@media (max-width: 720px) {
-  .header-container {
-    padding: 50px;
-  }
-  .header-modal {
-    height: 54vh;
-    width: 32vw;
-    margin-right: 22px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -100px;
-  }
-}
-@media (max-width: 620px) {
-  .nav-container {
-    display: flex;
-    flex-direction: column;
-  }
-  .header-modal {
-    width: 34vw;
-    margin-right: 20px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -60px;
-  }
-}
-@media (max-width: 530px) {
-  .header-container {
-    padding: 30px;
-  }
-  .header-modal {
-    width: 37vw;
-    margin-right: 18px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: -30px;
-  }
-}
-@media (max-width: 410px) {
-  .header-container {
-    padding: 26px;
-  }
-  .header-modal {
-    width: 39vw;
-    margin-right: 16px;
-  }
-  .header-modal h2 {
-    font-size: 25px;
-  }
-  .MENU-LINK-MOBILE-OPEN {
-    margin-left: 30px;
-  }
-}
-@media (max-width: 330px) {
-  .header-container {
-    padding: 18px;
-  }
-  .header-modal {
-    width: 48vw;
-    margin-right: 14px;
-  }
-  .login-btn, .logout-btn {
-    font-size: 18px;;
   }
   .HAMBURGER-ICON {
-    margin-top: -160px;
+    margin-top: -200px;
   }
 }
 
 
-  
+@media (max-width: 800px) {
+/*--------(from here)---------*/
+.header-container {
+    font-size: 12px;;
+  }
+/*-------(WELCOME {user})---------*/
+.img-container {
+  padding: 8px;
+}
+.img-container img {
+  height: 30px;
+  width: 30px;
+}
+.username {
+  margin-bottom: 8px;
+}
+/*--------(ADD a new fruggie btn zone)---------*/
+.link-button {
+  height: 7.5em;
+  width: 70px;
+}
+.link-button span {
+  font-size: 12px;
+}
+.profile-container-loggedin {
+  /* display: flex;
+  align-items: center; */
+  width: 90%;
+}
+.header-container {
+  padding: 40px 30px;
+}
+.logout-btn {
+  font-size: 15px;
+}
+/*--------(stop)---------*/
+.header-modal {
+    height: 52vh;
+    width: 28vw;
+}
+.login-to-add {
+    display: none;
+}
+}
+
+
+@media (max-width: 720px) {
+.header-container {
+  padding: 50px;
+}
+.header-modal {
+  height: 54vh;
+  width: 32vw;
+}
+/*--------(from here)---------*/
+.img-container img {
+height: 30px;
+width: 30px;
+}
+.username {
+margin-bottom: 7px;
+}
+/*--------(ADD a new fruggie btn zone)---------*/
+.link-button {
+height: 7.5em;
+width: 65px;
+}
+.link-button span {
+font-size: 10px;
+}
+.header-container {
+padding: 40px 20px;
+}
+.logout-btn {
+font-size: 13px;
+}
+/*--------(stop)---------*/  
+}
+
+
+@media (max-width: 620px) {
+.nav-container {
+  display: flex;
+  flex-direction: column;
+}
+.header-modal {
+  width: 34vw;
+}
+}
+
+
+@media (max-width: 530px) {
+.header-modal {
+  width: 37vw;
+}
+.MENU-LINK-MOBILE-OPEN a {
+  font-size: 17px;
+}
+/*--------(from here)---------*/
+.header-container {
+  font-size: 10px;
+}
+.img-container img {
+  height: 25px;
+  width: 25px;
+}
+/*--------(ADD a new fruggie btn zone)---------*/
+.link-button {
+  height: 8em;
+  width: 60px;
+}
+.link-button span {
+  font-size: 9px;
+}
+.header-container {
+  padding: 40px 15px;
+}
+.logout-btn {
+  font-size: 12px;
+}
+/*--------(stop)---------*/  
+}
+
+
+@media (max-width: 410px) {
+.header-modal {
+  width: 39vw;
+}
+.header-modal h2 {
+  font-size: 25px;
+}
+.MENU-LINK-MOBILE-OPEN a {
+  font-size: 14px;
+}
+/*--------(from here)---------*/
+.profile-container-loggedin {
+  display: flex;
+  flex-direction: column;
+}
+.header-container {
+  height: 170px;
+  font-size: 10px;
+}
+.img-container {
+  width: 70%;
+  margin-bottom: -10px;;
+}
+.img-container img {
+  height: 20px;
+  width: 21px;
+}
+/*--------(ADD a new fruggie btn zone)---------*/
+.link-button {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  justify-content: center;
+  align-items: center;
+  height: 5em;
+  width: 53px;
+}
+.link-button span {
+  font-size: 8px;
+}
+.header-container {
+  padding: 40px 5px;
+}
+.logout-btn {
+  font-size: 10px;
+}
+/*--------(stop)---------*/ 
+}
+
+
+@media (max-width: 340px) {
+.header-modal {
+  width: 48vw;
+}
+.login-btn, .logout-btn {
+  font-size: 18px;;
+}
+.CROSS-ICON {
+  left: 0px;
+}
+.MENU-LINK-MOBILE-OPEN a {
+  font-size: 11px;
+}
+.MENU-LINK-MOBILE-OPEN {
+  margin-top: 25px;
+  left: -20px;
+}
+/*--------(from here)---------*/
+.link-button {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  height: 5em;
+  width: 50px;
+}
+.img-container {
+  width: 70%;
+  margin-bottom: -10px;;
+}
+.img-container img {
+  height: 18px;
+  width: 22px;
+}
+/*--------(ADD a new fruggie btn zone)---------*/
+.header-container {
+  height: 175px;
+  padding: 40px 0px;
+}
+.logout-btn {
+  font-size: 9px;
+}
+/*--------(stop)---------*/ 
+}
+
+
+@media (max-width: 300px) {
+/*--------(from here)---------*/
+.header-container {
+  height: 180px;
+}
+.link-button {
+  height: 5em;
+  width: 50px;
+}
+.img-container img {
+  height: 20px;
+  width: 24px;
+}
+/*--------(stop)---------*/ 
+}

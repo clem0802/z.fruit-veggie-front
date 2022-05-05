@@ -80,8 +80,7 @@ export default function Header({baseUrl}) {
 
 
     return (
-        <div className='header-container'>
-
+      <div className='header-container'>
 
         <div className="flex items-center justify-between py-8">
             <nav>
@@ -100,11 +99,12 @@ export default function Header({baseUrl}) {
                     <div className={isNavOpen ? "showMenuNav" : "hideMenuNav"}> 
                             <div
                                 className="CROSS-ICON absolute top-0 right-13 px-8 py-5"
-                                style={{color: "red"}}
+                                style={{color: "rgb(159, 2, 2)"}}
                                 onClick={() => setIsNavOpen(false)}>X 
                             </div>
                             <div>
-                                <ul className="MENU-LINK-MOBILE-OPEN flex flex-col text-sm min-h-[150px]">
+                                <ul className="MENU-LINK-MOBILE-OPEN absolute top-0 right-13 px-8 py-5 min-h-[150px]">
+                                {/* <ul className="MENU-LINK-MOBILE-OPEN flex flex-col text-sm min-h-[150px]"> */}
                                     <li className="my-2"><a href="/">Home</a></li>
                                     <li className="my-2"><a href="/contents">Contents</a></li>
                                     <li className="my-2"><a href="/contact">Contact</a></li>
@@ -142,78 +142,74 @@ export default function Header({baseUrl}) {
         </div>
 
 
-            <div>
-            {
-                loggedIn ? 
-                <div className='profile-container-loggedin'>
-                    <button className='link-button'>
-                        <Link to="/add-content"><span><p>Add a new fruggie</p></span></Link>
-                    </button>
-                        <div className='img-container'>
-                            <p>Welcome</p>
-                            <p className='username'>{user.username}</p>
-                            <img src={user.imageUrl} alt='avatar' />
-                        </div>
-                    <button className='logout-btn' onClick={handleLogout}>Logout</button>
-                </div> 
+        <div className='MODAL-CONTAINER'>
+        {
+            loggedIn ? 
+            <div className='profile-container-loggedin'>
+                <button className='link-button'>
+                    <Link to="/add-content"><span><p>Add a fruggie</p></span></Link>
+                </button>
+                    <div className='img-container'>
+                        <p>Welcome</p>
+                        <p className='username'>{user.username}</p>
+                        <img src={user.imageUrl} alt='avatar' />
+                    </div>
+                <button className='logout-btn' onClick={handleLogout}>Logout</button>
+            </div> 
 
-                : <div className='profile-container-loggedout'>
-                        {/* <p className='login-to-add'>Login to add contents</p> */}
-                        <button className='login-btn' onClick={()=>setModal(!modal)}>Login</button>
-                  </div>
-            }
-            
-            {
-                modal ? 
-                <div className='header-modal'>
-                  <h3 onClick={()=>{setModal(false)}}>X</h3>
-                    {
-                        userExists ?
-                        <div>
-                            <h2>Login</h2>
-                            <form onSubmit={handleLogin}>
-                                <input type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
-                                <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
-                                <button type="submit" className='login-btn' onChange={(e)=>setImageUrl(e.target.value)}>Submit</button>
-                            </form>
-                            
-                            <div>
-                                <p className='dont'>Don't have an account?</p><br/>
-                                <p><span onClick={()=>{setUserExists(false)}}>Sign up</span></p><br/>
-                                {message !== '' ? <p>{message}</p> : null}
-                            </div>
-
-                        </div>
+            : <div className='profile-container-loggedout'>
+                    {/* <p className='login-to-add'>Login to add contents</p> */}
+                    <button className='login-btn' onClick={()=>setModal(!modal)}>Login</button>
+              </div>
+        }
+        
+        {
+            modal ? 
+            <div className='header-modal'>
+                <h3 onClick={()=>{setModal(false)}}>X</h3>
+                {
+                    userExists ?
+                    <div>
+                        <h2>Login</h2>
+                        <form onSubmit={handleLogin}>
+                            <input type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
+                            <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
+                            <button type="submit" className='login-btn' onChange={(e)=>setImageUrl(e.target.value)}>Submit</button>
+                        </form>
                         
-                        : <div>
-                            <h2>Sign Up</h2>
-                            <form onSubmit={handleSignup}>
-                                <input className='' type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
-                                <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
-                                <input type="text" placeholder="Enter your image url" onChange={(e)=>setImageUrl(e.target.value)} />
-                                <button type="submit" className='login-btn'>Submit</button>
-                            </form>
+                        <div>
+                            <p className='dont'>Don't have an account?</p><br/>
+                            <p><span onClick={()=>{setUserExists(false)}}>Sign up</span></p><br/>
+                            {message !== '' ? <p>{message}</p> : null}
+                        </div>
 
-                            {
-                                signupSuccess ? 
-                                <p style={{"color":"green"}}>Signed up successfully. <span onClick={()=>{setUserExists(true)}}>Login</span></p>
-                                : 
-                                <div>
-                                    <p className='already'>Already have an account?</p>
-                                    <p><span onClick={()=>{setUserExists(true)}}>Login</span></p>
-                                </div>
-                                
-                                
-                                
-                            }
-                          </div>
-                    }
-                </div> 
+                    </div>
+                    
+                    : <div>
+                        <h2>Sign Up</h2>
+                        <form onSubmit={handleSignup}>
+                            <input className='' type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
+                            <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
+                            <input type="text" placeholder="Enter your image url" onChange={(e)=>setImageUrl(e.target.value)} />
+                            <button type="submit" className='login-btn'>Submit</button>
+                        </form>
 
-                : null
-            }
-            </div>
-            
+                        {
+                            signupSuccess ? 
+                            <p style={{"color":"green"}}>Signed up successfully. <span onClick={()=>{setUserExists(true)}}>Login</span></p>
+                            : 
+                            <div>
+                                <p className='already'>Already have an account?</p>
+                                <p><span onClick={()=>{setUserExists(true)}}>Login</span></p>
+                            </div>
+                        }
+                      </div>
+                }
+            </div> 
+
+            : null
+        }
         </div>
+      </div>
     )
 }

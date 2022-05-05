@@ -30,19 +30,21 @@ export default function Form({baseUrl}){
                 <h1>Add a New Fruggie</h1>
                 <div className='input-container'>
                     <label>Fruggie Name</label>
-                    <input value={title} onChange={(e)=>{setTitle(e.target.value)}} placeholder='Enter fruggie name' />
+                    <input value={title} onChange={(e)=>{setTitle(e.target.value)}} placeholder='Fruggie name' />
                 </div>
                 <div className='input-container'>
                     <label>Fruggie Description</label>
-                    <textarea value={description} onChange={(e)=>{setDescription(e.target.value)}} placeholder='Enter fruggie description'></textarea>
+                    <textarea value={description} onChange={(e)=>{setDescription(e.target.value)}} placeholder='Fruggie description (less than 120 letters)'
+                    style={{width: "80%"}}
+                    ></textarea>
                 </div>
                 <div className='input-container'>
                     <label>Fruggie Category</label>
-                    <input value={category} onChange={(e)=>{setCategory(e.target.value)}} placeholder='Enter fruggie category' />
+                    <input value={category} onChange={(e)=>{setCategory(e.target.value)}} placeholder='Fruggie category' />
                 </div>
                 <div className='input-container'>
                     <label>Fruggie Image URL</label>
-                    <input value={imageUrl} onChange={(e)=>{setImageUrl(e.target.value)}} placeholder='Enter fruggie image url' />
+                    <input value={imageUrl} onChange={(e)=>{setImageUrl(e.target.value)}} placeholder='Fruggie image url' />
                 </div>
                 <button type="submit">Submit</button>
             </form>

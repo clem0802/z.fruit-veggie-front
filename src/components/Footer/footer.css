@@ -1,12 +1,10 @@
 .footer-container {
   width: 100%;
-  background-color: rgba(76, 113, 24, 0.594);
+  background-color: rgb(106, 136, 65);
   font-size: 25px;
   display: flex;
   justify-content: center;
   align-items: center;
-  /* border-top-left-radius: 40%;
-  border-top-right-radius: 40%; */
 }
 .fontawesome-container {
   width: 24%;
@@ -17,4 +15,38 @@
 a {
   color: rgb(47, 45, 45);
   font-size: 32px;
+}
+
+
+/*----------------------------------------*/
+/* ------------MEDIA QUERIES------------- */
+@media (max-width: 400px) {
+  .fontawesome-container {
+    width: 21%;
+  }
+  a {
+    /* background-color: red; */
+    color: rgb(47, 45, 45);
+    font-size: 28px;
+  }
+}
+@media (max-width: 330px) {
+  .fontawesome-container {
+    width: 18%;
+  }
+  a {
+    /* background-color: gold; */
+    color: rgb(47, 45, 45);
+    font-size: 22px;
+  }
+}
+@media (max-width: 300px) {
+  .fontawesome-container {
+    width: 13%;
+  }
+  a {
+    /* background-color: dodgerblue; */
+    color: rgb(47, 45, 45);
+    font-size: 14px;
+  }
 }
