@@ -3,6 +3,10 @@ a {
   text-decoration: none;
   padding: 18px;
 }
+input {
+  color: black;
+}
+/*---------------------------*/
 .header-container {
   /* height: 160px; */
   height: 200px;
@@ -26,22 +30,6 @@ a {
 }
 
 /* ------------HEADER (Left - Navbar Menu)------------- */
-/* .fruggie-app {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.402);
-  padding-bottom: 6px;
-  border-radius: 8px;
-  transition: 0.7s ease;
-  text-align: center;
-}
-.fruggie-app:hover {
- transform: scale(1.1);
- background-color: #c8b11c;
- cursor: pointer;
- font-weight: bold;
- text-decoration-line: underline;
- transform: scale(1.1);
-} */
 /*-----------(Tailwind Hamburger)------------*/
 .HAMBURGER-ICON {
   margin-top: -200px;
@@ -76,7 +64,6 @@ a {
   font-size: 21px;
   text-decoration: underline;
 }
-/*-----------------------*/
 
 /*-------(WELCOME {user})---------*/
 .img-container {

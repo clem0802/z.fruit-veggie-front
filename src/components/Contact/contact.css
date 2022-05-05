@@ -32,7 +32,6 @@
     outline: none;
   }
   ::placeholder { 
-    text-shadow: 1px 1px 2px white, 0 0 0.3em black;
     font-size: 15px;
-    opacity: 1; 
+    /* opacity: 1;  */
   }

@@ -40,14 +40,22 @@ export default function Header({baseUrl}) {
     // handleSignup
     const handleSignup=(e)=>{
         e.preventDefault()
-        axios.post(`${baseUrl}/user/register`,{
+        axios.post(`${baseUrl}/users/register`,{
             username,password,imageUrl
         })
         .then(res=>{
             setSignupSuccess(true)
             console.log(res.data)
         })
-        .catch(err=>console.log(err))
+        // .catch(err=>console.log(err))
+        // below added 2022.05.05 (elif)
+        .catch(err=>{
+            if(err.response.status === 400){
+                alert("Username already exists")
+            } else {
+                console.log(err)
+            }
+        })
     }
 
     // handleLogin
@@ -180,7 +188,7 @@ export default function Header({baseUrl}) {
                         : <div>
                             <h2>Sign Up</h2>
                             <form onSubmit={handleSignup}>
-                                <input type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
+                                <input className='' type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
                                 <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
                                 <input type="text" placeholder="Enter your image url" onChange={(e)=>setImageUrl(e.target.value)} />
                                 <button type="submit" className='login-btn'>Submit</button>
