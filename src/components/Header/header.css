@@ -220,6 +220,10 @@ input {
   text-align: center;
 }
 .already {
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; */
   padding-top: 15px;
   padding-bottom: 18px;
 }

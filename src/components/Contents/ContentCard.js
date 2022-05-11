@@ -38,7 +38,7 @@ export default function ContentCard({content}){
                             <Link to={`/contentdetails/${content.title}`}><span><p>See details</p></span></Link>
                         </button>
                         {
-                            user.id===content.user_id ? <button className='delete-button' onClick={handleDelete}><p>Delete card</p></button> : null
+                          user.id===content.user_id ? <button className='delete-button' onClick={handleDelete}><p>Delete card</p></button> : null
                         }
                     </div>
             

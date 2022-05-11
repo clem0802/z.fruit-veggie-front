@@ -26,7 +26,7 @@ export default function Header({baseUrl}) {
     const [signupSuccess,setSignupSuccess]=useState(false);
     const [loggedIn,setLoggedIn]=useState(false);
     const [modal,setModal]=useState(false);
-    const [userExists,setUserExists]=useState(true);
+    const [userExists,setUserExists]=useState(false); //
     const [username,setUsername]=useState('');
     const [password,setPassword]=useState('');
     const [imageUrl,setImageUrl]=useState('');
@@ -208,7 +208,12 @@ export default function Header({baseUrl}) {
 
                         {
                             signupSuccess ? 
-                            <p style={{"color":"green"}}>Signed up successfully. <span onClick={()=>{setUserExists(true)}}>Login</span></p>
+                            <div>
+                                <p className='already' style={{"color":"greenyellow", "fontSize":18}}>Signed up successfully.</p>
+                                <p><span onClick={()=>{setUserExists(true)}}>Login</span>
+                            </p>
+                            </div>
+
                             : 
                             <div>
                                 <p className='already'>Already have an account?</p>

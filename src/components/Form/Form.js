@@ -18,6 +18,7 @@ export default function Form({baseUrl}){
             title,description,category,imageUrl
         })
         .then(res=>{
+            window.location.reload()
             console.log(res)
         })
         .catch(err=>console.log(err))
@@ -46,7 +47,14 @@ export default function Form({baseUrl}){
                     <label>Fruggie Image URL</label>
                     <input value={imageUrl} onChange={(e)=>{setImageUrl(e.target.value)}} placeholder='fruggie image url' />
                 </div>
-                <button type="submit">Submit</button>
+
+                {
+                    user.id
+                    ? <button className='submit-button' onClick={addNewFruggie}><p>Submit</p></button> 
+                    : null
+                }
+
+
             </form>
         </div>
     )
