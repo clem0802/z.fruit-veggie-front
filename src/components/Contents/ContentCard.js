@@ -1,12 +1,14 @@
 // import axios from 'axios';
 
-import {useEffect,useState} from 'react';
+import {useEffect,useState,useContext} from 'react';
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../context/UserContext';
 
 export default function ContentCard({content}){
-    const [userId,setUserId]=useState();
+    // const [userId,setUserId]=useState();
     const handleDelete=()=>{}
+    const {user,setUser}=useContext(UserContext);
 
     return (
         
@@ -20,12 +22,12 @@ export default function ContentCard({content}){
                         </div>  
                     </div>
 
-                    <div>
+                    <div className='detail-delete-container'>
                         <button className='detail-button'>
                             <Link to={`/contentdetails/${content.title}`}><span><p>See details</p></span></Link>
                         </button>
                         {
-                            userId===content.user_id ? <button onClick={handleDelete}>delete</button> : null
+                            user.id===content.user_id ? <button className='delete-button' onClick={handleDelete}><p>Delete card</p></button> : null
                         }
                     </div>
             

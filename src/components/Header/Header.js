@@ -115,9 +115,9 @@ export default function Header({baseUrl}) {
                 
 
                 <ul className="DESKTOP-MENU hidden space-x-6 lg:flex">
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/contents">Contents</a></li>
-                    <li><a href="/contact">Contact</a></li>
+                    <li><Link to="/">Home</Link></li>
+                    <li><Link to="/contents">Contents</Link></li>
+                    <li><Link to="/contact">Contact</Link></li>
                 </ul>
             </nav>
 
@@ -170,12 +170,12 @@ export default function Header({baseUrl}) {
                 {
                     userExists ?
                     <div>
-                        <h2>Login</h2>
+                        <h2>Login</h2><br/>
                         <form onSubmit={handleLogin}>
                             <input type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
                             <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
                             <button type="submit" className='login-btn' onChange={(e)=>setImageUrl(e.target.value)}>Submit</button>
-                        </form>
+                        </form><br/>
                         
                         <div>
                             <p className='dont'>Don't have an account?</p><br/>
@@ -186,13 +186,13 @@ export default function Header({baseUrl}) {
                     </div>
                     
                     : <div>
-                        <h2>Sign Up</h2>
+                        <h2>Sign Up</h2><br/>
                         <form onSubmit={handleSignup}>
                             <input className='' type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
                             <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
                             <input type="text" placeholder="Enter your image url" onChange={(e)=>setImageUrl(e.target.value)} />
                             <button type="submit" className='login-btn'>Submit</button>
-                        </form>
+                        </form><br/>
 
                         {
                             signupSuccess ? 

@@ -81,16 +81,14 @@
 }
 .content-title {
   margin-top: -10px;
-  margin-bottom: 10px;
   font-size: 20px;
   font-weight: bold;
 }
 .content-category, .fruit-button, .veggie-button {
-  padding: 15px;
+  padding: 13px;
   font-weight: bold;
-  border-radius: 8px;
   margin: 0px 85px -30px 85px;
-  border-radius: 0 55% 0 55%;
+  border-radius: 0 60% 0 60%;
   text-align: center;
 }
 .fruit-button {
@@ -100,6 +98,12 @@
 .veggie-button {
   background-color: rgb(157, 222, 100);
   color: green;
+}
+
+/*--------"See details" - "Delete card" container--------*/
+.detail-delete-container {
+  display: flex;
+  flex-direction: column;
 }
 /*--------"See details" button--------*/
 .detail-button {
@@ -117,12 +121,27 @@
 }
 .content-card span:hover {
   font-weight: bold;
-  font-size: 18px;
+  font-size: 16px;
   text-transform: uppercase;
   text-decoration-line: underline;
 }
-
-
+/*--------"Delete card" button--------*/
+.delete-button {
+  background-color: rgb(247, 236, 182);
+  border: none;
+  border-radius: 12px;
+  margin-top: 5px;
+  cursor: pointer;
+  text-align: center;
+  font-size: 15px;
+  font-weight: bolder;
+  transition: 0.7s ease;
+}
+.delete-button:hover {
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration-line: underline;
+}
 
 
 /* ------------MEDIA QUERIES------------- */

@@ -63,7 +63,9 @@ input {
   font-size: 21px;
   text-decoration: underline;
 }
-
+.hideMenuNav {
+  display: none;
+}
 
 /*-------(HEADER MODAL on the right)---------*/
 /*-------(WELCOME {user})---------*/
@@ -88,11 +90,12 @@ input {
 /*--------(ADD a new fruggie btn zone)---------*/
 .link-button {
   text-align: center;
-  height: 8em;
+  height: 5em;
   width: 140px;
   border-radius: 12px;
   background-color: green;
   display: flex;
+  align-items: center;
 }
 .link-button span:hover {
   color: #c8b11c;
@@ -173,8 +176,8 @@ input {
 /*--------(HEADER MODAL)---------*/
 .header-modal {
   background-color: rgb(74, 130, 74);
-  border-radius: 0 0 8px 8px;
-  height: 54vh;
+  border-radius: 0 0 10px 10px;
+  height: 60vh;
   width: 22vw;
   position: absolute;
   top: 0;
@@ -196,7 +199,8 @@ input {
 .header-modal h3 {
   max-width: fit-content;
   cursor: pointer;
-  padding-bottom: 10px;
+  margin-top: -80px;
+  padding-bottom: 20px;
   color: rgb(159, 2, 2);
 }
 .header-modal form {
@@ -230,6 +234,7 @@ input {
   color: green;
   padding: 8px;
   border-radius: 8px;
+  position: relative;
 }
 .header-modal p {
   margin: auto;
@@ -279,7 +284,6 @@ input {
     padding: 40px 20px;
   }
   .header-modal {
-    height: 54vh;
     width: 32vw;
   }
   .HAMBURGER-ICON {
@@ -325,21 +329,17 @@ input {
 }
 /*--------(stop)---------*/
 .header-modal {
-    height: 52vh;
     width: 28vw;
 }
 .login-to-add {
     display: none;
 }
 }
-
-
 @media (max-width: 720px) {
 .header-container {
   padding: 50px;
 }
 .header-modal {
-  height: 54vh;
   width: 32vw;
 }
 /*--------(from here)---------*/
@@ -366,8 +366,6 @@ font-size: 13px;
 }
 /*--------(stop)---------*/  
 }
-
-
 @media (max-width: 620px) {
 .nav-container {
   display: flex;
@@ -377,8 +375,6 @@ font-size: 13px;
   width: 34vw;
 }
 }
-
-
 @media (max-width: 530px) {
 .header-modal {
   width: 37vw;
@@ -410,8 +406,6 @@ font-size: 13px;
 }
 /*--------(stop)---------*/  
 }
-
-
 @media (max-width: 410px) {
 .header-modal {
   width: 39vw;
@@ -459,11 +453,9 @@ font-size: 13px;
 }
 /*--------(stop)---------*/ 
 }
-
-
 @media (max-width: 340px) {
 .header-modal {
-  width: 48vw;
+  width: 50vw;
 }
 .login-btn, .logout-btn {
   font-size: 18px;;
@@ -503,12 +495,11 @@ font-size: 13px;
 }
 /*--------(stop)---------*/ 
 }
-
-
 @media (max-width: 300px) {
 /*--------(from here)---------*/
-.header-container {
-  height: 180px;
+.header-modal {
+  height: 55vh;
+  width: 42vw
 }
 .link-button {
   height: 5em;

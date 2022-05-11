@@ -31,6 +31,9 @@
 .fruggie-card p {
     font-size: 13px;
 }
+details:hover {
+  cursor: pointer;
+}
   
 
 /*--------------------------*/
