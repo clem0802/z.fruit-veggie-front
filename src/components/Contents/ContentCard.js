@@ -5,9 +5,12 @@ import { Link } from 'react-router-dom';
 import { UserContext } from '../../context/UserContext';
 
 export default function ContentCard({content}){
+
+    const baseUrl = 'https://fruggie.herokuapp.com';
+
     // const [userId,setUserId]=useState();
     const handleDelete=()=>{
-        axios.delete(`https://fruggie.herokuapp.com/contents/${content.id}`)
+        axios.delete(`${baseUrl}/contents/${content.id}`)
         .then(res=>{
             // console.log(res)
             window.location.reload()
