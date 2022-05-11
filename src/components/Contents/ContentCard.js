@@ -1,5 +1,4 @@
-// import axios from 'axios';
-
+import axios from 'axios';
 import {useEffect,useState,useContext} from 'react';
 import React from 'react';
 import { Link } from 'react-router-dom';
@@ -7,7 +6,16 @@ import { UserContext } from '../../context/UserContext';
 
 export default function ContentCard({content}){
     // const [userId,setUserId]=useState();
-    const handleDelete=()=>{}
+    const handleDelete=()=>{
+        axios.delete(`https://fruggie.herokuapp.com/contents/${content.id}`)
+        .then(res=>{
+            // console.log(res)
+            window.location.reload()
+        })
+        .catch(err=>console.log(err))
+    }
+
+
     const {user,setUser}=useContext(UserContext);
 
     return (

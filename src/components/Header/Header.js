@@ -48,7 +48,7 @@ export default function Header({baseUrl}) {
             console.log(res.data)
         })
         // .catch(err=>console.log(err))
-        // below added 2022.05.05 (elif)
+        // below added 2022.05.05 
         .catch(err=>{
             if(err.response.status === 400){
                 alert("Username already exists")
@@ -68,14 +68,26 @@ export default function Header({baseUrl}) {
             setUser(res.data)
             setLoggedIn(true)
             setModal(false)
+            localStorage.setItem('user',JSON.stringify(res.data)) // 2022.05..11(elif)
         })
         .catch(err=>console.log(err))
     }
+
+    useEffect(()=>{
+        const currentUser = localStorage.getItem('user') // 2022.05..11(elif)  
+        if(currentUser){
+            setUser(JSON.parse(currentUser))
+            setLoggedIn(true)
+        }
+    }, [])
+
+
 
     // handleLogout
     const handleLogout=()=>{
         setUser({})
         setLoggedIn(false)
+        localStorage.removeItem('user')
     }
 
 

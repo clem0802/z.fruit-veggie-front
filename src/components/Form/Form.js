@@ -34,7 +34,7 @@ export default function Form({baseUrl}){
                 </div>
                 <div className='input-container'>
                     <label>Fruggie Description</label>
-                    <textarea maxlength={170} value={description} onChange={(e)=>{setDescription(e.target.value)}} placeholder='fruggie description (less than 170 letters)'
+                    <textarea maxLength={170} value={description} onChange={(e)=>{setDescription(e.target.value)}} placeholder='fruggie description (less than 170 letters)'
                     style={{width: "80%"}}
                     ></textarea>
                 </div>
