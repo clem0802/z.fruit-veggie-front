@@ -55,8 +55,6 @@ function App() {
           </BrowserRouter>
       </UserContext.Provider>
     </div>
-
-
   );
 }
 
