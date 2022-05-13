@@ -17,7 +17,7 @@ export default function ContentDetails({baseUrl}){
 
   useEffect(()=>{
     // axios.get(`${baseUrl}/contentdetails/${title}}`)
-    axios.get(`${baseUrl}/contentdetails/${id}}`)
+    axios.get(`${baseUrl}/contentdetails2/${id}`)
     .then(res=>{
       setContents(res.data)
       console.log(res.data)

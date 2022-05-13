@@ -182,7 +182,7 @@ input {
   position: absolute;
   top: 0;
   right: 0;
-  padding: 20px 8px;
+  padding: 65px 8px 10px 8px;
   color: white;
   display: flex;
   flex-direction: column;

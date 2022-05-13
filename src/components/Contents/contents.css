@@ -268,21 +268,21 @@
   }
 }
 @media (max-width: 650px) {
-  .contents-container {
-    /* background-color: greenyellow; */
-  }
+  /* .contents-container {
+    background-color: greenyellow;
+  } */
   .content-card {
     padding: 20px;
     height: 480px;
   }
   .content-img {
     height: 11em;
-    width: 13em;
+    width: 12em;
   }
 }
 @media (max-width: 570px) {
   .contents-container {
-    padding: 70px 140px;
+    padding: 70px 120px;
     /* background-color: gold; */
   }
   .content-card {
@@ -290,13 +290,13 @@
     height: 440px;
   }
   .content-img {
-    height: 9em;
-    width: 10em;
+    height: 10em;
+    width: 11em;
   }
 }
 @media (max-width: 490px) {
   .contents-container {
-    padding: 60px 100px;
+    padding: 60px 90px;
     /* background-color: firebrick; */
   }
   .content-img {
@@ -306,40 +306,40 @@
 }
 @media (max-width: 430px) {
   .contents-container {
-    padding: 60px 90px;
+    padding: 60px 70px;
     /* background-color: slateblue; */
   }
 }
 @media (max-width: 400px) {
   .contents-container {
-    padding: 50px 50px;
+    padding: 50px 30px;
     /* background-color: salmon; */
   }
 }
 @media (max-width: 340px) {
   .contents-container {
-    padding: 50px 50px;
+    padding: 50px 25px;
     /* background-color: rgb(99, 96, 96); */
   }
   .content-img {
-    height: 9em;
-    width: 10em;
+    height: 10em;
+    width: 11em;
   }
 }
 @media (max-width: 300px) {
   .contents-container {
-    padding: 40px 40px;
+    padding: 40px 15px;
     /* background-color: dodgerblue; */
   }
   .content-img {
-    height: 8em;
-    width: 8em;
+    height: 9em;
+    width: 9em;
   }
 }
 @media (max-width: 270px) {
   .contents-container {
     margin-right: -10px;
-    padding: 40px 20px;
+    padding: 40px 10px;
     /* background-color: rgb(235, 51, 248); */
   }
 }
