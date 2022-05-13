@@ -12,7 +12,7 @@ export default function Contents({contents}) { // {contents} is an array
   // initially, we want all fruggies to be equal to "data"
   const [allcontents,setAllContents] = useState(data);
 
-  // this is for FAVORITE div, so I create a new STATE
+  // this is for FAVORITE div, so create a new STATE
   // the initial value will be blank, a BLANK ARRAY
   // const [favoriteContents,setFavoriteContents] = useState([]);
 

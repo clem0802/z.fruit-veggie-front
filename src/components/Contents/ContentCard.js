@@ -35,7 +35,7 @@ export default function ContentCard({content}){
 
                     <div className='detail-delete-container'>
                         <button className='detail-button'>
-                            <Link to={`/contentdetails/${content.id}`}><span><p>See details</p></span></Link>
+                            <Link to={`/contentdetails2/${content.id}`}><span><p>See details</p></span></Link>
                             {/* <Link to={`/contentdetails/${content.title}`}><span><p>See details</p></span></Link> */}
                         </button>
                         {
