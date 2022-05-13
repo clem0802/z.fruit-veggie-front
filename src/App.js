@@ -47,7 +47,7 @@ function App() {
                   <Routes>
                       <Route path="/" element={<Home />} />
                       <Route path="/contents" element={<Contents contents={contents} />} />
-                      <Route path={`/contentdetails/:title`} element={<ContentDetails contents={contents} baseUrl={baseUrl} />} />
+                      <Route path={`/contentdetails/:id`} element={<ContentDetails contents={contents} baseUrl={baseUrl} />} />
                       <Route path="/add-content" element={<Form baseUrl={baseUrl} />} />
                       <Route path="/contact" element={<Contact />} />
                   </Routes>
