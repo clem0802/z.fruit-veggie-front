@@ -12,10 +12,12 @@ import {useState,useEffect,useContext} from 'react';
 export default function ContentDetails({baseUrl}){
     
   const [contents,setContents]=useState([]);
-  const {title} = useParams();
+  // const {title} = useParams();
+  const {id} = useParams();
 
   useEffect(()=>{
-    axios.get(`${baseUrl}/contentdetails/${title}`)
+    // axios.get(`${baseUrl}/contentdetails/${title}}`)
+    axios.get(`${baseUrl}/contentdetails/${id}}`)
     .then(res=>{
       setContents(res.data)
       console.log(res.data)
