@@ -10,7 +10,7 @@
 }
 
 .fruggie-card {
-    background-color: rgba(129, 125, 125, 0.439);
+    background-color: rgba(148, 144, 144, 0.439);
     color: rgb(3, 3, 3);
     text-shadow: 1px 1px 2px rgba(8, 34, 13, 0.959), 0 0 1em rgb(255, 255, 255);
     display: flex;
@@ -33,6 +33,8 @@
 }
 details:hover {
   cursor: pointer;
+  border: none;
+  outline-width: 0;
 }
   
 
@@ -40,9 +42,9 @@ details:hover {
 /*--------------------------*/
 /* ------------MEDIA QUERIES------------- */
 @media (max-width: 1350px) {
-  .home-container {
+  /* .home-container {
     background-color: purple;
-  }
+  } */
   .fruggie-card {
     margin-top: 160px;
     padding: 10px 60px;
@@ -52,18 +54,18 @@ details:hover {
   }
 }
 @media (max-width: 1250px) {
-  .home-container {
+  /* .home-container {
     background-color: red;
-  }
+  } */
   .fruggie-card {
     margin-top: 170px;
     padding: 10px 60px;
   }
 }
 @media (max-width: 1160px) {
-  .home-container {
+  /* .home-container {
     background-color: pink;
-  }
+  } */
   .fruggie-card {
     padding: 10px 60px;
   }
@@ -72,9 +74,9 @@ details:hover {
   }
 }
 @media (max-width: 1000px) {
-  .home-container {
+  /* .home-container {
     background-color: blue;
-  }
+  } */
   .fruggie-card {
     margin-top: 170px;
     padding: 10px 70px;
@@ -83,7 +85,7 @@ details:hover {
 @media (max-width: 950px) {
   .home-container {
     padding-top: 30px;
-    background-color: green;
+    /* background-color: green; */
   }
   .fruggie-card {
     margin-top: 165px;
@@ -91,9 +93,9 @@ details:hover {
   }
 }
 @media (max-width: 900px) {
-  .home-container {
+  /* .home-container {
     background-color: orange;
-  }
+  } */
   .fruggie-card {
     margin-top: 140px;
     padding: 10px 60px;
@@ -103,7 +105,7 @@ details:hover {
   .home-container {
     padding-left: 160px; 
     padding-right: 160px;
-    background-color: aqua;
+    /* background-color: aqua; */
   }
   .fruggie-card {
     margin-top: 130px;
@@ -114,7 +116,7 @@ details:hover {
   .home-container {
     padding-left: 130px; 
     padding-right: 130px;
-    background-color: black;
+    /* background-color: black; */
   }
   .fruggie-card {
     padding: 10px 45px;
@@ -130,16 +132,16 @@ details:hover {
   .home-container {
     padding-left: 120px; 
     padding-right: 120px;
-    background-color: teal;
+    /* background-color: teal; */
   }
   .fruggie-card {
     margin-top: 125px;
   }
 }
 @media (max-width: 640px) {
-  .home-container {
+  /* .home-container {
   background-color: fuchsia;
-  }
+  } */
   .fruggie-card {
     margin-top: 130px;
   }
@@ -154,7 +156,7 @@ details:hover {
   .home-container {
     padding-left: 100px; 
     padding-right: 100px;
-    background-color: gray;
+    /* background-color: gray; */
   }
   .fruggie-card h3 {
     font-size: 20px;
@@ -167,7 +169,7 @@ details:hover {
   .home-container {
     padding-left: 80px; 
     padding-right: 80px;
-    background-color: blanchedalmond;
+    /* background-color: blanchedalmond; */
   }
   .fruggie-card {
     margin-top: 140px;
@@ -177,14 +179,14 @@ details:hover {
   .home-container {
     padding-left: 45px; 
     padding-right: 45px;
-    background-color: dodgerblue;
+    /* background-color: dodgerblue; */
   }
 }
 @media (max-width: 400px) {
   .home-container {
     padding-left: 30px; 
     padding-right: 30px;
-    background-color: red;
+    /* background-color: red; */
   }
   .fruggie-card {
     padding: 10px 40px;
@@ -194,7 +196,7 @@ details:hover {
   .home-container {
     padding-left: 25px; 
     padding-right: 25px;
-    background-color: indigo;
+    /* background-color: indigo; */
   }
   .fruggie-card {
     padding: 10px 20px;
@@ -205,10 +207,10 @@ details:hover {
   .home-container {
     padding-left: 20px; 
     padding-right: 20px;
-    background-color: darkblue;
+    /* background-color: darkblue; */
   }
   .fruggie-card {
-    padding: 0px 5px;
+    padding: 5px 5px 10px 5px;
     margin-top: 130px;
   }   
 }

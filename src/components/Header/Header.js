@@ -96,10 +96,10 @@ export default function Header({baseUrl}) {
 
         <div className="flex items-center justify-between py-8">
             <nav>
-                <section className="MOBILE-MENU flex lg:hidden">
+                <section className="MOBILE-MENU flex lg:hidden">        
                     <div className={isNavOpen ? "hideMenuNav" : "showMenuNav"}>
                         <div
-                            className="HAMBURGER-ICON space-y-2" 
+                            className="absolute ml-6 space-y-2" 
                             onClick={() => setIsNavOpen((prev) => !prev)} // toggle isNavOpen state on click
                         >  
                             <span className="block h-1 w-8 bg-white"></span>
@@ -138,23 +138,16 @@ export default function Header({baseUrl}) {
     display: none;
 }
 .showMenuNav {
-    display: block;
-    position: absolute;
-    width: 40%;
-    height: 50vh;
     top: 0;
-    left: 0;
-    z-index: 10;
+    left: 6;
     display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
     align-items: center;
 }
 `}</style>
         </div>
 
 
-        <div className='MODAL-CONTAINER'>
+        <div>
         {
             loggedIn ? 
             <div className='profile-container-loggedin'>
@@ -177,34 +170,39 @@ export default function Header({baseUrl}) {
         
         {
             modal ? 
-            <div className='header-modal'>
-                <h3 onClick={()=>{setModal(false)}}>X</h3>
+            <div className='header-modal' id="modal-guts">
                 {
                     userExists ?
-                    <div>
-                        <h2>Login</h2><br/>
-                        <form onSubmit={handleLogin}>
-                            <input type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
-                            <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
-                            <button type="submit" className='login-btn' onChange={(e)=>setImageUrl(e.target.value)}>Submit</button>
-                        </form><br/>
+                    <div>      
+                        <div className='LOGIN-title'>
+                            <p>Login</p><br/>
+                            <form onSubmit={handleLogin}>
+                                <input type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
+                                <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
+                                <button type="submit" className='login-btn' onChange={(e)=>setImageUrl(e.target.value)}>Submit</button>
+                            </form>
+                        </div><br/>
                         
-                        <div>
+                        <div className='X-signup'>
                             <p className='dont'>Don't have an account?</p><br/>
-                            <p><span onClick={()=>{setUserExists(false)}}>Sign up</span></p><br/>
-                            {message !== '' ? <p>{message}</p> : null}
+                            <div>
+                                <h3 onClick={()=>{setModal(false)}}>X</h3>
+                                <p><span onClick={()=>{setUserExists(false)}}>Sign up</span></p><br/>
+                                {message !== '' ? <p>{message}</p> : null}
+                            </div>
                         </div>
-
                     </div>
                     
-                    : <div>
-                        <h2>Sign Up</h2><br/>
-                        <form onSubmit={handleSignup}>
-                            <input className='' type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
-                            <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
-                            <input type="text" placeholder="Enter your image url" onChange={(e)=>setImageUrl(e.target.value)} />
-                            <button type="submit" className='login-btn'>Submit</button>
-                        </form><br/>
+                    : <div className='submit-div' >
+                        <div className='SIGNUP-title'>
+                            <p>Sign Up</p><br/>
+                            <form onSubmit={handleSignup}>
+                                <input className='' type="text" placeholder="Enter username" onChange={(e)=>setUsername(e.target.value)} />
+                                <input type="password" placeholder="Enter password" onChange={(e)=>setPassword(e.target.value)} />
+                                <input type="text" placeholder="Enter your image url" onChange={(e)=>setImageUrl(e.target.value)} />
+                                <button type="submit" className='login-btn'>Submit</button>
+                            </form>
+                        </div><br/>
 
                         {
                             signupSuccess ? 
@@ -215,9 +213,13 @@ export default function Header({baseUrl}) {
                             </div>
 
                             : 
-                            <div>
+                            <div className='X-login'>
                                 <p className='already'>Already have an account?</p>
-                                <p><span onClick={()=>{setUserExists(true)}}>Login</span></p>
+                                <div>
+                                    <h3 onClick={()=>{setModal(false)}}>X</h3>
+                                    <p><span onClick={()=>{setUserExists(true)}}>Login</span></p>
+                                </div>
+                                
                             </div>
                         }
                       </div>

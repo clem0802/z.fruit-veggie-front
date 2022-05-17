@@ -34,14 +34,14 @@ export default function Form({baseUrl}){
                     <input value={title} onChange={(e)=>{setTitle(e.target.value)}} placeholder='fruggie name' />
                 </div>
                 <div className='input-container'>
+                    <label>Fruggie Category</label>
+                    <input value={category} onChange={(e)=>{setCategory(e.target.value)}} placeholder='fruit or vegetable' />
+                </div>
+                <div className='input-container'>
                     <label>Fruggie Description</label>
                     <textarea maxLength={170} value={description} onChange={(e)=>{setDescription(e.target.value)}} placeholder='fruggie description (less than 170 letters)'
                     style={{width: "80%"}}
                     ></textarea>
-                </div>
-                <div className='input-container'>
-                    <label>Fruggie Category</label>
-                    <input value={category} onChange={(e)=>{setCategory(e.target.value)}} placeholder='fruit or vegetable' />
                 </div>
                 <div className='input-container'>
                     <label>Fruggie Image URL</label>

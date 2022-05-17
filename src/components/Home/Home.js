@@ -15,20 +15,21 @@ export default function Home() {
 
             <details>
               <summary style={{fontWeight: "bold", textDecoration: "underline"}}>Details</summary>
-              <p>First of all, many thanks to my dear <span style={{fontWeight: "bold"}}>"Mimo Dev"</span> 
-                 instructor, Mrs <span style={{fontWeight: "bold"}}>Elif Balci</span>.
+              <p>First of all, infinite thanks to my dear <span style={{fontWeight: "bold"}}>"Mimo Dev"</span> instructor, Mrs <span style={{fontWeight: "bold"}}>Elif Balci</span>.
                  Without her, this project wouldn't have been able to be achieved. 
+                 Also, many thanks to Mimo's CEO, CPO, many excellent coding instructors, 
+                 and the entire invisible dev team I've never met and might never meet :)
               </p><br/>
               <p>
-                The backend code of this project was based on the backend patterns learned 
-                in <span style={{fontWeight: "bold"}}>"Mimo Dev"</span> learning program, 
-                then the backend code was deployed through "Heroku CLI" 
-                (linking directly to GitHub isn't working well for now).
-                And the database (fake users + real fruggie contents) was done via "Postman".
+                The backend code of this project was based on the patterns of one backend lesson learned 
+                in <span style={{fontWeight: "bold"}}>"Mimo Dev"</span> program. 
+                The deployment was done through "Heroku CLI" (linking directly to GitHub isn't working well at this time).
+                And the database (fake users + real fruggie contents) was done either via Postman 
+                or manual data entry from the submit form.
               </p><br/>
               <p>
-                The frontend was done with "React". 
-                Each "fruggie" content card has a "See details" button 
+                Pertaining to the frontend, done with "React",
+                each "fruggie" content card has a "See details" button 
                 which is linked to another detail page, for some further brief infos of that fruit or vegetable. 
               </p>
             </details>

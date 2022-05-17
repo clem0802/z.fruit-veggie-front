@@ -1,517 +1,538 @@
 a {
-  cursor: pointer;
-  text-decoration: none;
-  padding: 18px;
-}
-input {
-  color: black;
-}
-/*---------------------------*/
-.header-container {
-  height: 160px;
-  width: 100%;
-  background-color: rgb(106, 136, 65);
-  display: flex;
-  align-items: stretch;
-  padding: 40px 180px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 15px; /*---text size of Welcome {user} + white "Login" title in modal ---*/
-  font-weight: bold;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-  overflow: hidden;
-  position: fixed;
-  border-bottom-left-radius: 15%;
-  border-bottom-right-radius: 15%;
-}
-
-/* ------------HEADER (Left - Navbar Menu)------------- */
-/*-----------(Tailwind Hamburger)------------*/
-.HAMBURGER-ICON {
-  margin-top: -150px;
-}
-.CROSS-ICON {
-  left: 20px;
-  cursor: pointer;
-}
-.MENU-LINK-MOBILE-OPEN {
-  margin-top: 20px;
-  left: 0px;
-}
-.MENU-LINK-MOBILE-OPEN a {
-  transition: 0.7s ease;
-  font-size: 20px;
-}
-.MENU-LINK-MOBILE-OPEN a:hover {
-  color: rgb(56, 54, 54);
-  font-size: 24px;
-  text-decoration: underline;
-}
-.DESKTOP-MENU a {
-  background-color: green;
-  border-radius: 12px;;
-  font-size: 17px;
-  transition: 0.7s ease;
-  text-align: center;
-  color: rgb(245, 239, 188);
-}
-.DESKTOP-MENU a:hover {
-  color: #cab002;
-  font-size: 21px;
-  text-decoration: underline;
-}
-.hideMenuNav {
-  display: none;
-}
-
-/*-------(HEADER MODAL on the right)---------*/
-/*-------(WELCOME {user})---------*/
-.img-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  width: 50%;
-  border-radius: 12px;
-  color: white;
-  background-color: rgb(28, 100, 21);
-}
-.img-container img {
-  height: 42px;
-  width: 42px;
-  border-radius: 20%;
-}
-.username {
-  margin-bottom: 10px;
-}
-/*--------(ADD a new fruggie btn zone)---------*/
-.link-button {
-  text-align: center;
-  height: 5em;
-  width: 140px;
-  border-radius: 12px;
-  background-color: green;
-  display: flex;
-  align-items: center;
-}
-.link-button span:hover {
-  color: #c8b11c;
-  text-decoration-line: underline;
-}
-.link-button span {
-  transition: 0.7s ease;
-  font-size: 15px;
-  font-weight: bolder;
-  color: rgb(255, 250, 217);
-}
-.profile-container-loggedin {
-  display: flex;
-  align-items: center;
-  width: 50%;
-}
-/* .login-to-add {
-  margin-top: 10px;
-  font-size: 28px;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.402);
-  padding: 5px 18px;
-  border-radius: 8px;
-} */
-/*--------(LOGIN btn - Header Right)---------*/
-.login-btn { 
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.7s ease;
-  text-align: center;
-  font-size: 18px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 9px;
-  margin: 15px;
-  background-color: green;
-  color: rgb(245, 239, 188);
-}
-.login-btn:hover {
-  color: #c8b11c;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 22px;
-  text-decoration-line: underline;
-}
-
-/*--------(LOGOUT btn - inside Header Submit Form)---------*/
-.logout-btn {
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: 0.7s ease;
-  font-size: 20px;
-  font-weight: bold;
-  text-decoration: none;
-  padding: 9px;
-  margin: 15px;
-  background-color: rgb(159, 2, 2);
-  color: rgb(245, 239, 188);
-}
-.logout-btn:hover {
-  color: #c8b11c;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 18px;
-  text-decoration-line: underline;
-}
-.profile-container-loggedout {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  font-size: 25px;
-}
-
-/*--------(HEADER MODAL)---------*/
-.header-modal {
-  background-color: rgb(74, 130, 74);
-  border-radius: 0 0 10px 10px;
-  height: 60vh;
-  width: 22vw;
-  position: absolute;
-  top: 0;
-  right: 0;
-  padding: 65px 8px 10px 8px;
-  color: white;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  position: fixed;
-}
-.header-modal h2 {
-  margin: auto;
-  max-width: fit-content;
-  padding-bottom: 15px;
-  margin-bottom: 15px;
-}
-.header-modal h3 {
-  max-width: fit-content;
-  cursor: pointer;
-  margin-top: -80px;
-  padding-bottom: 20px;
-  color: rgb(159, 2, 2);
-}
-.header-modal form {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  height: 15vh;
-}
-.header-modal input {
-  width: 80%;
-  border: none;
-  border-radius: 8px;
-  padding: 3px 8px;
-}
-.dont, .already {
-  text-align: center;
-}
-.already {
-  /* display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center; */
-  padding-top: 15px;
-  padding-bottom: 18px;
-}
-.header-modal input {
-  margin: 3px;
-}
-.header-modal span {
-  cursor: pointer;
-  font-style: italic;
-  font-size: 17px;
-  background-color: greenyellow;
-  color: green;
-  padding: 8px;
-  border-radius: 8px;
-  position: relative;
-}
-.header-modal p {
-  margin: auto;
-  max-width: fit-content;
-}
-
-
-/*--------------------------*/
-/*--------------------------*/
-/* ------------MEDIA QUERIES------------- */
-@media (max-width: 1350px) {
-  .header-container {
-    padding: 40px 160px;
+    cursor: pointer;
+    text-decoration: none;
+    padding: 18px;
   }
+  input {
+    color: black;
+  }
+  /*---------------------------*/
+  .header-container {
+    height: 170px;
+    width: 100%;
+    background-color: rgb(106, 136, 65);
+    padding: 40px 180px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px; /*---text size of Welcome {user} + white "Login" title in modal ---*/
+    font-weight: bold;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    position: fixed;
+    border-bottom-left-radius: 15%;
+    border-bottom-right-radius: 15%;
+  }
+  
+  /* ------------HEADER (Left - Navbar Menu)------------- */
+  /*-----------(Tailwind Hamburger)------------*/
+  .CROSS-ICON {
+    left: 20px;
+    cursor: pointer;
+  }
+  .MENU-LINK-MOBILE-OPEN {
+    margin-top: 20px;
+    left: 0px;
+  }
+  .MENU-LINK-MOBILE-OPEN a {
+    transition: 0.7s ease;
+    font-size: 20px;
+  }
+  .MENU-LINK-MOBILE-OPEN a:hover {
+    color: rgb(56, 54, 54);
+    font-size: 24px;
+    text-decoration: underline;
+  }
+  .DESKTOP-MENU a {
+    background-color: green;
+    border-radius: 12px;;
+    font-size: 17px;
+    transition: 0.7s ease;
+    text-align: center;
+    color: rgb(245, 239, 188);
+  }
+  .DESKTOP-MENU a:hover {
+    color: #cab002;
+    font-size: 21px;
+    text-decoration: underline;
+  }
+  .hideMenuNav {
+    display: none;
+  }
+  
+  /*-------(HEADER MODAL on the right)---------*/
+  /*-------(WELCOME {user})---------*/
+  .img-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    width: 50%;
+    border-radius: 12px;
+    color: white;
+    background-color: rgb(28, 100, 21);
+  }
+  .img-container img {
+    height: 42px;
+    width: 42px;
+    border-radius: 20%;
+  }
+  .username {
+    margin-bottom: 10px;
+  }
+  /*--------(ADD a new fruggie btn zone)---------*/
+  .link-button {
+    text-align: center;
+    height: 5em;
+    width: 140px;
+    border-radius: 12px;
+    background-color: green;
+    display: flex;
+    align-items: center;
+  }
+  .link-button span:hover {
+    color: #c8b11c;
+    text-decoration-line: underline;
+  }
+  .link-button span {
+    transition: 0.7s ease;
+    font-size: 15px;
+    font-weight: bolder;
+    color: rgb(255, 250, 217);
+  }
+  .profile-container-loggedin {
+    /* background-color: orange; */
+    display: flex;
+    align-items: center;
+    width: 50%;
+  }
+  /*--------(LOGIN btn - Header Right)---------*/
+  .login-btn { 
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.7s ease;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 9px;
+    margin: 15px;
+    background-color: green;
+    color: rgb(245, 239, 188);
+  }
+  .login-btn:hover {
+    color: #c8b11c;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 22px;
+    text-decoration-line: underline;
+  }
+  
+  /*--------(LOGOUT btn - inside Header Submit Form)---------*/
+  .logout-btn {
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.7s ease;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 9px;
+    margin: 15px;
+    background-color: rgb(159, 2, 2);
+    color: rgb(245, 239, 188);
+  }
+  .logout-btn:hover {
+    color: #c8b11c;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    text-decoration-line: underline;
+  }
+  .profile-container-loggedout {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 25px;
+  }
+  
+  /*--------(HEADER MODAL)---------*/
   .header-modal {
-    height: 54vh;
+    background-color: rgb(74, 130, 74);
+    border-radius: 0 0 12px 12px;
+    height: 60vh;
     width: 22vw;
+    top: 0;
+    right: 0;
+    padding: 45px 8px 10px 8px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
+  #modal-guts {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 20%;
+    height: 90%;
+    padding: 50px 30px;
+    overflow: auto;
+  }
+  .SIGNUP-title p {
+    padding-bottom: 50px;
+  }
+  .LOGIN-title p {
+      padding-bottom: 40px;
+  }
+  .header-modal h3 {
+    cursor: pointer;
+    color: rgb(159, 2, 2);
+    position: absolute; 
+  }
+  .SIGNUP-title, LOGIN-title {
+      display: flex;
+      flex-direction: column;
+  }
+  .X-signup, .X-login {
+      display: grid;
+      grid-template: repeat(2,1) / 1fr;
+  }
+  .header-modal form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 15vh;
+  }
+  .header-modal input {
+    width: 70%;
+    border: none;
+    border-radius: 8px;
+    padding: 3px 8px;
+  }
+  .dont, .already {
+    text-align: center;
+  }
+  .already {
+    padding-top: 15px;
+    padding-bottom: 18px;
+  }
+  .header-modal input {
+    margin: 3px;
+  }
+  .header-modal span {
+    cursor: pointer;
+    font-style: italic;
+    font-size: 17px;
+    background-color: greenyellow;
+    color: green;
+    padding: 8px;
+    border-radius: 8px;
+    position: relative;
+    transition: 0.7s ease;
+  }
+  .header-modal span:hover {
+    color: #c8b11c;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 19px;
+    text-decoration-line: underline;
+  }
+  .header-modal p {
+    margin: auto;
+    max-width: fit-content;
+  }
+  
+  
+  /*--------------------------*/
+  /*--------------------------*/
+  /* ------------MEDIA QUERIES------------- */
+  @media (max-width: 1350px) {
+    .header-container {
+      padding: 40px 160px;
+    }
+    .header-modal {
+      height: 54vh;
+      width: 22vw;
+    }
 }
-@media (max-width: 1250px) {
+  @media (max-width: 1250px) {
+    .header-container {
+      padding: 40px 110px;
+    }
+}
+  @media (max-width: 1160px) {
+    .header-container {
+      padding: 40px 90px;
+    }
+}
+  @media (max-width: 1000px) {
+    .header-container {
+      padding: 40px 70px;
+    }
+}
+  @media (max-width: 950px) {
+    .header-container {
+      padding: 40px 50px;
+    }
+}
+  @media (max-width: 900px) {
+    .header-container {
+      padding: 40px 30px;
+    }
+}
+  @media (max-width: 870px) {
+    .header-container {
+      padding: 40px 20px;
+    }
+    .header-modal {
+      width: 32vw;
+    }
+    #modal-guts {
+        width: 25%;
+    }
+}
+  
+
+  @media (max-width: 800px) {
   .header-container {
-    padding: 40px 110px;
-  }
-}
-@media (max-width: 1160px) {
-  .header-container {
-    padding: 40px 90px;
-  }
-}
-@media (max-width: 1000px) {
-  .header-container {
-    padding: 40px 70px;
-  }
-}
-@media (max-width: 950px) {
-  .header-container {
-    padding: 40px 50px;
-  }
-}
-@media (max-width: 900px) {
+      font-size: 12px;;
+    }
+  /*-------(WELCOME {user})---------*/
+  .img-container {
+    padding: 8px;
+    }
+  .img-container img {
+    height: 30px;
+    width: 30px;
+    }
+  .username {
+    margin-bottom: 8px;
+    }
+  /*--------(ADD a new fruggie btn zone)---------*/
+  .link-button {
+    height: 7.5em;
+    width: 70px;
+    }
+  .link-button span {
+    font-size: 12px;
+    }
+  .profile-container-loggedin {
+    width: 90%;
+    }
   .header-container {
     padding: 40px 30px;
-  }
+    }
+  .logout-btn {
+    font-size: 15px;
+    }
+  .header-modal {
+      width: 28vw;
+    }
+  .login-to-add {
+      display: none;
+    }
+  #modal-guts {
+    width: 28%;
+    }
 }
-@media (max-width: 870px) {
+
+@media (max-width: 720px) {
   .header-container {
-    padding: 40px 20px;
+    padding: 50px;
   }
   .header-modal {
     width: 32vw;
   }
-  .HAMBURGER-ICON {
-    margin-top: -200px;
+  #modal-guts {
+    width: 32%;
   }
-}
-
-
-@media (max-width: 800px) {
-/*--------(from here)---------*/
-.header-container {
-    font-size: 12px;;
-  }
-/*-------(WELCOME {user})---------*/
-.img-container {
-  padding: 8px;
-}
-.img-container img {
+  /*--------(from here)---------*/
+  .img-container img {
   height: 30px;
   width: 30px;
-}
-.username {
-  margin-bottom: 8px;
-}
-/*--------(ADD a new fruggie btn zone)---------*/
-.link-button {
+  }
+  .username {
+  margin-bottom: 7px;
+  }
+  /*--------(ADD a new fruggie btn zone)---------*/
+  .link-button {
   height: 7.5em;
-  width: 70px;
+  width: 65px;
+  }
+  .link-button span {
+  font-size: 10px;
+  }
+  .header-container {
+  padding: 40px 20px;
+  }
+  .logout-btn {
+  font-size: 13px;
+  }
 }
-.link-button span {
-  font-size: 12px;
-}
-.profile-container-loggedin {
-  /* display: flex;
-  align-items: center; */
-  width: 90%;
-}
-.header-container {
-  padding: 40px 30px;
-}
-.logout-btn {
-  font-size: 15px;
-}
-/*--------(stop)---------*/
-.header-modal {
-    width: 28vw;
-}
-.login-to-add {
-    display: none;
-}
-}
-@media (max-width: 720px) {
-.header-container {
-  padding: 50px;
-}
-.header-modal {
-  width: 32vw;
-}
-/*--------(from here)---------*/
-.img-container img {
-height: 30px;
-width: 30px;
-}
-.username {
-margin-bottom: 7px;
-}
-/*--------(ADD a new fruggie btn zone)---------*/
-.link-button {
-height: 7.5em;
-width: 65px;
-}
-.link-button span {
-font-size: 10px;
-}
-.header-container {
-padding: 40px 20px;
-}
-.logout-btn {
-font-size: 13px;
-}
-/*--------(stop)---------*/  
-}
+
 @media (max-width: 620px) {
-.nav-container {
-  display: flex;
-  flex-direction: column;
+  .nav-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-modal {
+    width: 34vw;
+  }
+  #modal-guts {
+    width: 35%;
+  }
 }
-.header-modal {
-  width: 34vw;
-}
-}
+
 @media (max-width: 530px) {
-.header-modal {
-  width: 37vw;
+  .header-modal {
+    width: 37vw;
+  }
+  .MENU-LINK-MOBILE-OPEN a {
+    font-size: 17px;
+  }
+  /*--------(from here)---------*/
+  .header-container {
+    font-size: 10px;
+  }
+  .img-container img {
+    height: 25px;
+    width: 25px;
+  }
+  /*--------(ADD a new fruggie btn zone)---------*/
+  .link-button {
+    height: 8em;
+    width: 60px;
+  }
+  .link-button span {
+    font-size: 9px;
+  }
+  .header-container {
+    padding: 40px 15px;
+  }
+  .logout-btn {
+    font-size: 12px;
+  }
+  #modal-guts {
+    width: 37%;
+  }
 }
-.MENU-LINK-MOBILE-OPEN a {
-  font-size: 17px;
-}
-/*--------(from here)---------*/
-.header-container {
-  font-size: 10px;
-}
-.img-container img {
-  height: 25px;
-  width: 25px;
-}
-/*--------(ADD a new fruggie btn zone)---------*/
-.link-button {
-  height: 8em;
-  width: 60px;
-}
-.link-button span {
-  font-size: 9px;
-}
-.header-container {
-  padding: 40px 15px;
-}
-.logout-btn {
-  font-size: 12px;
-}
-/*--------(stop)---------*/  
-}
+
 @media (max-width: 410px) {
-.header-modal {
-  width: 39vw;
+  .header-modal {
+    width: 39vw;
+  }
+  /* .header-modal h2 {
+    font-size: 25px;
+  } */
+  .MENU-LINK-MOBILE-OPEN a {
+    font-size: 14px;
+  }
+  .profile-container-loggedin {
+    display: flex;
+    flex-direction: column;
+  }
+  .header-container {
+    height: 170px;
+    font-size: 10px;
+  }
+  .img-container {
+    width: 70%;
+    margin-bottom: -10px;;
+  }
+  .img-container img {
+    height: 20px;
+    width: 21px;
+  }
+  #modal-guts {
+    width: 40%;
+  }
+  /*--------(ADD a new fruggie btn zone)---------*/
+  .link-button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 5em;
+    width: 53px;
+  }
+  .link-button span {
+    font-size: 8px;
+  }
+  .header-container {
+    padding: 40px 5px;
+  }
+  .logout-btn {
+    font-size: 10px;
+  }
 }
-.header-modal h2 {
-  font-size: 25px;
-}
-.MENU-LINK-MOBILE-OPEN a {
-  font-size: 14px;
-}
-/*--------(from here)---------*/
-.profile-container-loggedin {
-  display: flex;
-  flex-direction: column;
-}
-.header-container {
-  height: 170px;
-  font-size: 10px;
-}
-.img-container {
-  width: 70%;
-  margin-bottom: -10px;;
-}
-.img-container img {
-  height: 20px;
-  width: 21px;
-}
-/*--------(ADD a new fruggie btn zone)---------*/
-.link-button {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  justify-content: center;
-  align-items: center;
-  height: 5em;
-  width: 53px;
-}
-.link-button span {
-  font-size: 8px;
-}
-.header-container {
-  padding: 40px 5px;
-}
-.logout-btn {
-  font-size: 10px;
-}
-/*--------(stop)---------*/ 
-}
+
 @media (max-width: 340px) {
-.header-modal {
-  width: 50vw;
+  .header-modal {
+    width: 50vw;
+  }
+  .login-btn, .logout-btn {
+    font-size: 18px;;
+  }
+  .CROSS-ICON {
+    left: 0px;
+  }
+  .MENU-LINK-MOBILE-OPEN a {
+    font-size: 11px;
+  }
+  .MENU-LINK-MOBILE-OPEN {
+    margin-top: 25px;
+    left: -20px;
+  }
+  #modal-guts {
+    width: 42%;
+  }
+  .link-button {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    height: 5em;
+    width: 50px;
+  }
+  .img-container {
+    width: 70%;
+    margin-bottom: -10px;;
+  }
+  .img-container img {
+    height: 18px;
+    width: 22px;
+  }
+  /*--------(ADD a new fruggie btn zone)---------*/
+  .header-container {
+    height: 175px;
+    padding: 40px 0px;
+  }
+  .logout-btn {
+    font-size: 9px;
+  }
 }
-.login-btn, .logout-btn {
-  font-size: 18px;;
-}
-.CROSS-ICON {
-  left: 0px;
-}
-.MENU-LINK-MOBILE-OPEN a {
-  font-size: 11px;
-}
-.MENU-LINK-MOBILE-OPEN {
-  margin-top: 25px;
-  left: -20px;
-}
-/*--------(from here)---------*/
-.link-button {
-  margin-top: 10px;
-  margin-bottom: 5px;
-  height: 5em;
-  width: 50px;
-}
-.img-container {
-  width: 70%;
-  margin-bottom: -10px;;
-}
-.img-container img {
-  height: 18px;
-  width: 22px;
-}
-/*--------(ADD a new fruggie btn zone)---------*/
-.header-container {
-  height: 175px;
-  padding: 40px 0px;
-}
-.logout-btn {
-  font-size: 9px;
-}
-/*--------(stop)---------*/ 
-}
+
 @media (max-width: 300px) {
-/*--------(from here)---------*/
-.header-modal {
-  height: 55vh;
-  width: 42vw
-}
-.link-button {
-  height: 5em;
-  width: 50px;
-}
-.img-container img {
-  height: 20px;
-  width: 24px;
-}
-/*--------(stop)---------*/ 
+  /*--------(from here)---------*/
+  .header-modal {
+    height: 55vh;
+    width: 42vw
+  }
+  .link-button {
+    height: 5em;
+    width: 50px;
+  }
+  .img-container img {
+    height: 20px;
+    width: 24px;
+  }
+  #modal-guts {
+    width: 47%;
+  }
 }

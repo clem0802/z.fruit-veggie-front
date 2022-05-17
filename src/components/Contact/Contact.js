@@ -43,7 +43,7 @@ const Contact = () => {
               type="text"
               placeholder="Your full name"
               name="name"
-              className="ipt px-3 py-3 placeholder-yellow-300 relative rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring focus:ring-yellow-200 w-auto"
+              className="ipt px-3 py-3 text-yellow-400 placeholder-yellow-300 relative rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring focus:ring-yellow-200 w-auto"
               required
             />
           </div>
@@ -53,7 +53,7 @@ const Contact = () => {
               type="email"
               placeholder="Your email"
               name="email"
-              className="ipt px-3 py-3 placeholder-yellow-300 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring focus:ring-yellow-200 w-full"
+              className="ipt px-3 py-3 text-yellow-400 placeholder-yellow-300 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring focus:ring-yellow-200 w-full"
               required
             />
           </div>
@@ -62,7 +62,7 @@ const Contact = () => {
             <textarea
               placeholder="Your message for me"
               name="message"
-              className="ipt px-3 py-3 placeholder-yellow-300 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring focus:ring-yellow-200 w-full"
+              className="ipt px-3 py-3 text-yellow-400 placeholder-yellow-300 relative bg-white bg-white rounded text-sm border-0 shadow outline-none focus:outline-none focus:ring focus:ring-yellow-200 w-full"
               required
             />
           </div>
