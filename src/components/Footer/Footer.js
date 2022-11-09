@@ -16,9 +16,9 @@ export default function Footer() {
   return (
     <div className='footer-container'>
       <div className="fontawesome-container">   
-          <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100079029092235"><FontAwesomeIcon icon={["fab", "facebook"]} /></a>     
+          {/* <a target="_blank" rel="noreferrer" href="https://www.facebook.com/profile.php?id=100079029092235"><FontAwesomeIcon icon={["fab", "facebook"]} /></a>      */}
           <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/clemence-0802/"><FontAwesomeIcon icon={["fab", "linkedin"]} /></a> 
-          <a target="_blank" rel="noreferrer" href="https://twitter.com/?lang=fr"><FontAwesomeIcon icon={["fab", "twitter"]} /></a>
+          {/* <a target="_blank" rel="noreferrer" href="https://twitter.com/?lang=fr"><FontAwesomeIcon icon={["fab", "twitter"]} /></a> */}
           <a target="_blank" rel="noreferrer" href="https://github.com/clem0802"><FontAwesomeIcon icon={["fab", "github"]} /></a> 
       </div>
     </div>

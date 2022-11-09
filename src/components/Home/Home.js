@@ -2,6 +2,9 @@ import React from 'react';
 import './home.css';
 
 export default function Home() {
+  const current = new Date();
+  const date = `${current.getDate()}/${current.getMonth()+1}/${current.getFullYear()}`;
+
   return (
     <div className='home-container'>
 
@@ -35,7 +38,7 @@ export default function Home() {
             </details>
             <br/>
 
-            <p>May 2022</p>
+            <p>{date}</p>
             <p className='piano-picman' style={{fontSize:10}}>Home page photo by Webvilla</p>
         </div>
 
